@@ -1,0 +1,12 @@
+package com.shangho.blackcore.api.location.request;
+
+public class UpdateLocationItemRequest implements java.io.Serializable {
+	private String token;
+	private int id;
+	private int categoryid;
+	private int referid;
+	private String name;
+	private String description;
+	private String status;
+
+}

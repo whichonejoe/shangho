@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Mon Oct 08 19:58:49 CST 2018
+org.eclipse.jst.j2ee.server\:shangho-configuration=WEB-INF/lib/shangho-configuration.jar
+org.eclipse.jst.j2ee.server\:shangho-crm-logical=WEB-INF/lib/shangho-crm-logical.jar
+org.eclipse.jst.j2ee.server\:crmdao=WEB-INF/lib/crmdao.jar

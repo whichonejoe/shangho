@@ -1,0 +1,6 @@
+package com.shangho.blackcore.api.location.request;
+
+public class DeleteLocationCategoryRequest implements java.io.Serializable {
+	private String token;
+	private int id;
+}

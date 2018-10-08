@@ -1,0 +1,19 @@
+package com.shangho.blackcore.api.location.request;
+
+public class InsertLocationItemRequest implements java.io.Serializable {
+	private String token;
+	private int categoryid;
+	private int referid;
+	private String name;
+	private String description;
+	private String status;
+	private String token;
+	private String token;
+	private String token;
+	
+	private String token;
+	private String token;
+	
+
+
+}

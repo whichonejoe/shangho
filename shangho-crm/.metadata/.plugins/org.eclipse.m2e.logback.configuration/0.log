@@ -1,0 +1,698 @@
+2018-10-06 19:03:35,112 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-blackcore\pom.xml.
+2018-10-06 19:03:36,900 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/shangho-api/crmdao/1.0.0/crmdao-1.0.0.pom
+2018-10-06 19:03:36,903 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-api:crmdao:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:36,952 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:38,318 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/shangho-api/crmdao/1.0.0/crmdao-1.0.0.jar
+2018-10-06 19:03:38,519 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-common-framework:1.0.0 @ E:\workspace\shangho-crm\shangho-common-framework\pom.xml.
+2018-10-06 19:03:38,602 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-configuration:1.0.0 @ E:\workspace\shangho-crm\shangho-configuration\pom.xml.
+2018-10-06 19:03:38,959 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-crm-logical:1.0.0 @ E:\workspace\shangho-crm\shangho-crm-logical\pom.xml.
+2018-10-06 19:03:39,622 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-utils:1.0.0 @ E:\workspace\shangho-crm\shangho-utils\pom.xml.
+2018-10-06 19:03:40,823 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-utils/src/main/java
+2018-10-06 19:03:40,824 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-utils/src/test/java
+2018-10-06 19:03:40,887 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-common-framework/src/main/java
+2018-10-06 19:03:40,888 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-common-framework/src/test/java
+2018-10-06 19:03:40,948 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-configuration/src/main/java
+2018-10-06 19:03:40,949 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-configuration/src/test/java
+2018-10-06 19:03:41,008 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-crm-logical/src/main/java
+2018-10-06 19:03:41,008 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-crm-logical/src/test/java
+2018-10-06 19:03:41,108 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-blackcore/src/main/java
+2018-10-06 19:03:41,109 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /shangho-blackcore/src/main/resources
+2018-10-06 19:03:41,110 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /shangho-blackcore/src/test/java
+2018-10-06 19:03:41,196 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 5 project(s) in 13 sec
+2018-10-06 19:03:42,639 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:03:42,639 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-06 19:03:42,641 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:03:42,642 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-06 19:03:43,003 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:43,004 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-utils\src\main\resources
+2018-10-06 19:03:43,005 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:43,006 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-utils\src\test\resources
+2018-10-06 19:03:43,214 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:03:43,214 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-common-framework\src\main\resources
+2018-10-06 19:03:43,218 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:03:43,218 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-common-framework\src\test\resources
+2018-10-06 19:03:43,236 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-api:crmdao:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:43,240 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:43,678 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:43,679 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:03:43,680 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:43,681 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:03:43,827 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-api:crmdao:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:43,839 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:03:44,685 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:44,691 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-06 19:03:44,698 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:03:44,699 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:05:36,195 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-api:crmdao:1.0.0 @ E:\workspace\shangho-crm\crmdao\pom.xml.
+2018-10-06 19:05:36,199 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:05:36,272 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-crm-logical:1.0.0 @ E:\workspace\shangho-crm\shangho-crm-logical\pom.xml.
+2018-10-06 19:05:36,559 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-blackcore\pom.xml.
+2018-10-06 19:05:37,464 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crmdao/src/main/java
+2018-10-06 19:05:37,465 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /crmdao/src/test/java
+2018-10-06 19:05:37,516 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2018-10-06 19:05:37,985 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:05:38,045 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:05:38,045 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-06 19:05:38,047 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:05:38,047 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-06 19:05:38,064 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:05:38,329 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:05:38,332 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:05:38,334 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:05:38,336 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:05:38,397 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:05:38,962 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:05:38,965 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 19:05:38,968 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:05:38,969 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:07:38,207 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-10-06 19:07:38,215 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2018-10-06 19:07:47,660 [main] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM E:\workspace\shangho-crm\shangho-api-module\pom.xml: E:\workspace\shangho-crm\shangho-api-module\pom.xml (╰参тぃ﹚郎) @ 
+ for project  at E:\workspace\shangho-crm\shangho-api-module\pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM E:\workspace\shangho-crm\shangho-api-module\pom.xml: E:\workspace\shangho-crm\shangho-api-module\pom.xml (╰参тぃ﹚郎) @ 
+ for project  at E:\workspace\shangho-crm\shangho-api-module\pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:168) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:119) ~[maven-core-3.3.3.jar:3.3.3]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readMavenProject(MavenImpl.java:636) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:815) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$5.call(ProjectRegistryManager.java:1) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:811) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:191) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.profiles.ui.internal.actions.ProfileSelectionHandler.getMavenProjects(ProfileSelectionHandler.java:166) [org.eclipse.m2e.profiles.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.profiles.ui.internal.actions.ProfileSelectionHandler.execute(ProfileSelectionHandler.java:99) [org.eclipse.m2e.profiles.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.profiles.ui.internal.actions.ProfileSelectionHandler.execute(ProfileSelectionHandler.java:82) [org.eclipse.m2e.profiles.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_161]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56) [org.eclipse.e4.core.di_1.5.0.v20150421-2214.jar:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252) [org.eclipse.e4.core.di_1.5.0.v20150421-2214.jar:na]
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234) [org.eclipse.e4.core.di_1.5.0.v20150421-2214.jar:na]
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132) [org.eclipse.e4.core.contexts_1.4.0.v20150828-0818.jar:na]
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152) [org.eclipse.e4.core.commands_0.11.0.v20150422-0725.jar:na]
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493) [org.eclipse.core.commands_3.7.0.v20150422-0725.jar:na]
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486) [org.eclipse.core.commands_3.7.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210) [org.eclipse.e4.core.commands_0.11.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:343) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:330) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.m2e.profiles.ui.internal.actions.GenericCommandActionDelegate.run(GenericCommandActionDelegate.java:91) [org.eclipse.m2e.profiles.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:247) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420) [org.eclipse.jface_3.11.1.v20160128-1644.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769) [org.eclipse.swt.win32.win32.x86_64_3.104.2.v20160212-1350.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018) [org.eclipse.e4.ui.workbench.swt_0.13.0.v20150504-0621.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156) [org.eclipse.e4.ui.workbench_1.3.1.v20160203-0951.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:694) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337) [org.eclipse.core.databinding.observable_1.5.0.v20150422-0725.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:606) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.107.1.v20160120-2131.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139) [org.eclipse.ui.ide.application_1.1.0.v20150422-0725.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.300.v20150423-1356.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.102.v20160118-1700.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_161]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_161]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_161]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515) [org.eclipse.equinox.launcher_1.3.100.v20150511-1540.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM E:\workspace\shangho-crm\shangho-api-module\pom.xml: E:\workspace\shangho-crm\shangho-api-module\pom.xml (╰参тぃ﹚郎) @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:197) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:594) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:269) ~[maven-model-builder-3.3.3.jar:3.3.3]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:161) ~[maven-core-3.3.3.jar:3.3.3]
+	... 61 common frames omitted
+2018-10-06 19:07:53,734 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-api-module\pom.xml.
+2018-10-06 19:07:53,748 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:07:54,437 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:07:54,438 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-06 19:07:54,442 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:07:54,443 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-06 19:07:54,453 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:07:54,454 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 19:07:54,455 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:07:54,456 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:07:59,593 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:08:21,540 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-utils:1.0.0 @ E:\workspace\shangho-crm\shangho-api-module\pom.xml.
+2018-10-06 19:08:21,741 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-crm-logical:1.0.0 @ E:\workspace\shangho-crm\shangho-crm-logical\pom.xml.
+2018-10-06 19:08:21,754 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:08:22,139 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-blackcore\pom.xml.
+2018-10-06 19:08:22,893 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:22,894 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-06 19:08:22,895 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:22,896 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-06 19:08:24,067 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,067 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-06 19:08:24,069 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,071 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-06 19:08:24,089 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:08:24,337 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,338 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:08:24,339 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,340 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:08:24,364 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is missing, no dependency information available
+2018-10-06 19:08:24,903 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,904 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 19:08:24,906 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:24,906 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:08:35,864 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho:shangho-api-module:1.0.0 @ E:\workspace\shangho-crm\shangho-api-module\pom.xml.
+2018-10-06 19:08:36,028 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-crm-logical:1.0.0 @ E:\workspace\shangho-crm\shangho-crm-logical\pom.xml.
+2018-10-06 19:08:36,286 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-blackcore\pom.xml.
+2018-10-06 19:08:36,694 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-api:crmdao:1.0.0 @ E:\workspace\shangho-crm\crmdao\pom.xml.
+2018-10-06 19:08:37,266 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,267 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-06 19:08:37,268 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,269 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-06 19:08:37,545 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,545 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:08:37,548 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,549 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:08:37,988 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,989 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 19:08:37,991 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:37,991 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:08:39,339 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:39,339 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-06 19:08:39,340 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:39,341 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-06 19:08:39,551 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:39,552 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:08:39,553 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:39,554 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:08:39,812 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:39,816 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-06 19:08:39,819 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:39,820 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-06 19:08:46,809 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:46,810 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-06 19:08:46,812 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:46,813 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-06 19:08:46,819 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:46,819 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-06 19:08:46,819 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:46,819 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-06 19:08:46,825 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:46,825 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-06 19:08:46,826 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:46,826 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-06 19:08:46,916 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:46,916 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-utils\src\main\resources
+2018-10-06 19:08:46,917 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:46,918 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-utils\src\test\resources
+2018-10-06 19:08:46,999 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:46,999 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-common-framework\src\main\resources
+2018-10-06 19:08:47,000 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-06 19:08:47,000 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-common-framework\src\test\resources
+2018-10-06 19:08:47,212 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:47,212 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-06 19:08:47,213 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:47,214 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-06 19:08:47,595 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:47,596 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-06 19:08:47,597 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-06 19:08:47,597 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:38:34,631 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:34,653 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:38:34,655 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:34,656 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:38:36,808 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:36,829 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:38:36,837 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:36,838 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:38:45,244 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:45,246 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:38:45,252 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:45,255 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:38:53,086 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:53,089 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:38:53,091 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:38:53,092 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:39:07,931 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:07,932 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:39:07,933 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:07,934 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:39:13,685 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:13,687 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:39:13,688 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:13,689 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:39:18,369 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:18,369 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:39:18,370 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:18,372 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:39:53,928 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:53,929 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:39:53,932 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:39:53,933 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:40:05,535 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:05,537 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:40:05,539 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:05,540 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:40:14,940 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:14,941 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:40:14,942 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:14,943 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:40:20,464 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:20,464 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:40:20,466 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:20,467 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:40:25,500 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:25,501 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:40:25,502 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:40:25,503 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:42:12,039 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:12,048 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:42:12,050 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:12,051 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:42:16,196 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:16,197 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:42:16,198 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:16,199 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:42:23,860 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:23,861 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:42:23,863 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:23,864 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:42:55,105 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:55,105 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:42:55,108 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:42:55,109 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:03,959 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:03,960 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:03,961 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:03,962 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:11,040 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:11,041 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:11,048 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:11,051 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:40,496 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:40,497 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:40,498 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:40,498 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:41,557 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:41,558 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:41,559 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:41,560 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:44,096 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:44,097 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:44,098 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:44,098 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:56,470 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:56,471 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:56,472 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:56,472 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:43:57,509 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:57,509 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:43:57,510 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:43:57,511 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:44:10,722 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:10,723 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:44:10,724 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:10,725 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:44:15,903 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:15,904 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:44:15,905 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:15,906 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:44:22,769 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:22,770 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:44:22,771 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:22,772 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:44:26,932 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:26,933 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:44:26,934 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:26,935 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:44:31,500 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:31,502 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:44:31,503 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:31,505 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:44:51,499 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:51,499 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:44:51,500 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:44:51,501 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:45:16,908 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:16,909 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:45:16,909 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:16,910 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:45:23,961 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:23,963 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:45:23,964 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:23,965 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:45:33,311 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:33,312 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:45:33,313 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:33,313 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:45:36,700 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:36,701 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:45:36,702 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:36,702 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:45:39,170 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:39,171 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:45:39,172 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:39,172 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:45:58,477 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:58,478 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:45:58,479 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:45:58,479 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:46:04,275 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:04,276 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:46:04,278 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:04,279 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:46:35,232 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:35,233 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:46:35,234 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:35,235 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:46:46,013 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:46,014 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:46:46,015 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:46:46,016 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:47:09,073 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:09,074 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:47:09,075 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:09,076 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:47:25,450 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:25,451 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:47:25,452 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:25,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:47:27,604 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:27,606 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:47:27,607 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:47:27,608 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:48:07,601 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:07,602 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:48:07,603 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:07,604 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:48:12,133 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:12,133 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:48:12,134 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:12,135 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:48:14,226 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:14,227 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:48:14,228 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:14,229 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:48:19,098 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:19,100 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:48:19,101 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:19,102 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:48:31,864 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:31,864 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:48:31,865 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:31,866 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:48:46,531 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:46,532 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:48:46,533 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:46,534 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:48:59,356 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:59,357 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:48:59,358 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:48:59,359 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:04,266 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:04,267 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:04,268 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:04,269 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:08,452 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:08,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:49:08,454 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:08,455 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:49:11,537 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:11,538 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:49:11,539 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:11,540 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:49:11,571 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:11,572 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:49:11,573 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:11,574 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:49:28,839 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:28,840 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:28,841 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:28,842 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:40,660 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:40,660 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:40,661 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:40,661 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:41,690 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:41,690 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:41,691 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:41,692 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:42,769 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:42,770 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:42,771 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:42,771 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:49:55,614 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:55,614 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:49:55,615 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:49:55,616 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:50:00,255 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:00,255 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:50:00,257 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:00,258 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:50:07,581 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:07,582 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:50:07,584 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:07,584 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:50:10,758 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:10,759 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:50:10,760 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:10,761 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:50:10,796 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:10,797 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:50:10,798 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:10,799 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:50:36,643 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:36,643 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:50:36,644 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:36,645 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:50:44,135 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:44,136 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:50:44,137 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:44,138 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:50:56,356 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:56,357 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:50:56,358 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:50:56,359 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:51:00,518 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:00,519 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 19:51:00,520 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:00,521 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 19:51:07,377 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:07,379 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:51:07,380 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:07,381 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:51:09,523 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:09,524 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:51:09,524 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:09,525 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:51:09,560 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:09,562 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:51:09,563 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:51:09,564 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:52:01,378 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:52:01,378 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-08 19:52:01,379 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:52:01,379 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-08 19:52:01,692 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:01,693 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-08 19:52:01,695 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:01,696 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 19:52:42,847 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:42,848 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:52:42,849 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:42,850 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:52:56,178 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:56,178 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 19:52:56,179 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 19:52:56,180 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 19:53:08,800 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:08,800 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-08 19:53:08,801 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:08,801 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-08 19:53:18,035 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:18,036 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-08 19:53:18,037 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:18,037 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-08 19:53:19,094 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:19,094 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-08 19:53:19,095 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:19,096 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-08 19:53:34,198 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:34,198 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-08 19:53:34,201 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:34,201 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-08 19:53:44,003 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:44,003 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-08 19:53:44,004 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 19:53:44,004 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-08 19:54:11,038 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2018-10-08 20:16:44,483 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:44,486 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\main\resources
+2018-10-08 20:16:44,487 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:44,488 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 20:16:45,602 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,603 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 20:16:45,604 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,605 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 20:16:45,779 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,780 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 20:16:45,782 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,783 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 20:16:45,957 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,957 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\main\resources
+2018-10-08 20:16:45,958 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:45,959 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-blackcore\src\test\resources
+2018-10-08 20:16:48,019 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:48,020 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 20:16:48,021 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:48,022 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 20:16:49,255 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:49,256 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 20:16:49,257 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:49,258 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 20:16:49,515 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:49,516 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\main\resources
+2018-10-08 20:16:49,518 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:16:49,519 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-crm-logical\src\test\resources
+2018-10-08 20:16:51,365 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: shangho-blackcore:shangho-blackcore:0.0.0 @ E:\workspace\shangho-crm\shangho-blackcore\pom.xml.
+2018-10-08 20:16:52,499 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/shangho-blackcore/shangho-crm-logical/1.0.0/shangho-crm-logical-1.0.0.pom
+2018-10-08 20:16:52,503 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-blackcore:shangho-crm-logical:jar:1.0.0 is missing, no dependency information available
+2018-10-08 20:16:52,513 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-blackcore:shangho-utils:jar:1.0.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2018-10-08 20:16:52,655 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho:shangho-api-module:jar:1.0.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2018-10-08 20:16:52,659 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for shangho-blackcore:shangho-configuration:jar:1.0.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2018-10-08 20:16:53,436 [Worker-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/shangho-blackcore/shangho-crm-logical/1.0.0/shangho-crm-logical-1.0.0.jar
+2018-10-08 20:16:53,609 [Worker-1] ERROR o.e.m.e.x.i.MarkerLocationService - null
+org.eclipse.jface.text.BadLocationException: null
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:201) ~[na:na]
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:169) ~[na:na]
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineOffset(BasicStructuredDocument.java:1495) ~[na:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.findLocationForMarker(MarkerLocationService.java:106) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:48) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:308) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:295) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.DefaultMavenDependencyResolver.resolveProjectDependencies(DefaultMavenDependencyResolver.java:65) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:529) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$3.call(ProjectRegistryManager.java:491) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$3.call(ProjectRegistryManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:495) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2018-10-08 20:17:20,627 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:20,627 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-08 20:17:20,629 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:20,629 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-08 20:17:20,637 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:17:20,637 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\main\resources
+2018-10-08 20:17:20,638 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS950 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-08 20:17:20,639 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-api-module\src\test\resources
+2018-10-08 20:17:20,661 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:20,661 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\main\resources
+2018-10-08 20:17:20,662 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:20,662 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\shangho-configuration\src\test\resources
+2018-10-08 20:17:21,812 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:21,812 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\main\resources
+2018-10-08 20:17:21,813 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-08 20:17:21,813 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\workspace\shangho-crm\crmdao\src\test\resources
+2018-10-08 20:17:22,080 [Worker-16] ERROR o.e.m.e.x.i.MarkerLocationService - Error checking for warnings
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.checkVarious(MarkerLocationService.java:577) [org.eclipse.m2e.editor.xml_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.addEditorHintMarkers(MarkerLocationService.java:241) [org.eclipse.m2e.editor.xml_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.addEditorHintMarkers(MarkerUtils.java:66) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:708) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacade(ProjectRegistryManager.java:699) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:397) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2018-10-08 20:17:22,087 [Worker-16] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:579) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:541) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:497) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.7.0.v20150402-1709.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: java.io.FileNotFoundException: E:\workspace\shangho-crm\shangho-common-framework\pom.xml (╰参тぃ﹚郎)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_161]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_161]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_161]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:572) ~[org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	... 23 common frames omitted

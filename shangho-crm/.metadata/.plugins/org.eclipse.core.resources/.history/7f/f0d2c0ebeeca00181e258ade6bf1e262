@@ -1,0 +1,5 @@
+package com.shangho.blackcore.api.response;
+
+public class Apidocument {
+
+}

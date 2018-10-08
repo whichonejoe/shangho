@@ -1,0 +1,13 @@
+package com.shangho.blackcore.api.location.request;
+
+public class UpdateLocationItemRequest implements java.io.Serializable {
+	private static final long serialVersionUID = 1571495531122693261L;
+	private String token;
+	private int id;
+	private int categoryid;
+	private int referid;
+	private String name;
+	private String description;
+	private String status;
+
+}
