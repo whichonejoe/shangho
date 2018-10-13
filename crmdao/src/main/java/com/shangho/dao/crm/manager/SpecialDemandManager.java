@@ -5,21 +5,21 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.shangho.blackcore.api.location.response.ListLocationCategoryResponse;
-import com.shangho.blackcore.api.location.response.ListLocationItemResponse;
+import com.shangho.blackcore.api.specialdemand.response.ListSpecialDemandCategoryResponse;
+import com.shangho.blackcore.api.specialdemand.response.ListSpecialDemandItemResponse;
 import com.shangho.dao.connection.ProxoolConnection;
-import com.shangho.dao.crm.location.LocationRangeCategoryDao;
-import com.shangho.dao.crm.location.LocationRangeItemDao;
+import com.shangho.dao.crm.specialdemand.SpecialDemandCategoryDao;
+import com.shangho.dao.crm.specialdemand.SpecialDemandItemDao;
 
-public class LocationManager {
-	private LocationManager() {
+public class SpecialDemandManager {
+	private SpecialDemandManager() {
 	}
 
 	private static class LazyHolder {
-		public static final LocationManager INSTANCE = new LocationManager();
+		public static final SpecialDemandManager INSTANCE = new SpecialDemandManager();
 	}
 
-	public static LocationManager getInstance() {
+	public static SpecialDemandManager getInstance() {
 		return LazyHolder.INSTANCE;
 	}
 
@@ -38,7 +38,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			id = LocationRangeCategoryDao.getInstance().insert(conn, status, name, description);
+			id = SpecialDemandCategoryDao.getInstance().insert(conn, status, name, description);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -67,7 +67,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			id = LocationRangeItemDao.getInstance().insert(conn, categoryID, referID, status, name, description);
+			id = SpecialDemandItemDao.getInstance().insert(conn, categoryID, referID, status, name, description);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -93,7 +93,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			LocationRangeCategoryDao.getInstance().update(conn, ID, status, name, description);
+			SpecialDemandCategoryDao.getInstance().update(conn, ID, status, name, description);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -120,7 +120,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			LocationRangeItemDao.getInstance().update(conn, ID, categoryID, referID, status, name, description);
+			SpecialDemandItemDao.getInstance().update(conn, ID, categoryID, referID, status, name, description);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -141,8 +141,8 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			LocationRangeItemDao.getInstance().deleteWithCategoryID(conn, ID);
-			LocationRangeCategoryDao.getInstance().delete(conn, ID);
+			SpecialDemandItemDao.getInstance().deleteWithCategoryID(conn, ID);
+			SpecialDemandCategoryDao.getInstance().delete(conn, ID);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -163,8 +163,8 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			LocationRangeItemDao.getInstance().deleteWithReferID(conn, ID);
-			LocationRangeItemDao.getInstance().delete(conn, ID);
+			SpecialDemandItemDao.getInstance().deleteWithReferID(conn, ID);
+			SpecialDemandItemDao.getInstance().delete(conn, ID);
 			conn.commit();
 		} catch (Exception ex) {
 			throw new SQLException(ex);
@@ -188,7 +188,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			isExisted = LocationRangeCategoryDao.getInstance().isExist(conn, ID);
+			isExisted = SpecialDemandCategoryDao.getInstance().isExist(conn, ID);
 		} catch (Exception ex) {
 			throw new SQLException(ex);
 		} finally {
@@ -213,7 +213,7 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			isExisted = LocationRangeCategoryDao.getInstance().isExist(conn, ID, status);
+			isExisted = SpecialDemandCategoryDao.getInstance().isExist(conn, ID, status);
 		} catch (Exception ex) {
 			throw new SQLException(ex);
 		} finally {
@@ -238,9 +238,9 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			if (!LocationRangeCategoryDao.getInstance().isExist(conn, categoryID))
+			if (!SpecialDemandCategoryDao.getInstance().isExist(conn, categoryID))
 				return false;
-			if (referID > 0 && !LocationRangeItemDao.getInstance().isExist(conn, referID))
+			if (referID > 0 && !SpecialDemandItemDao.getInstance().isExist(conn, referID))
 				return false;
 			isPass = true;
 		} catch (Exception ex) {
@@ -268,11 +268,11 @@ public class LocationManager {
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			if (!LocationRangeItemDao.getInstance().isExist(conn, ID))
+			if (!SpecialDemandItemDao.getInstance().isExist(conn, ID))
 				return false;
-			if (!LocationRangeCategoryDao.getInstance().isExist(conn, categoryID))
+			if (!SpecialDemandCategoryDao.getInstance().isExist(conn, categoryID))
 				return false;
-			if (referID > 0 && !LocationRangeItemDao.getInstance().isExist(conn, referID))
+			if (referID > 0 && !SpecialDemandItemDao.getInstance().isExist(conn, referID))
 				return false;
 			isPass = true;
 		} catch (Exception ex) {
@@ -293,14 +293,14 @@ public class LocationManager {
 	 * @return
 	 * @throws SQLException
 	 */
-	public List<ListLocationCategoryResponse> listCategory(final String status, final List<String> names)
+	public List<ListSpecialDemandCategoryResponse> listCategory(final String status, final List<String> names)
 			throws SQLException {
 		Connection conn = null;
-		List<ListLocationCategoryResponse> list = new ArrayList<ListLocationCategoryResponse>();
+		List<ListSpecialDemandCategoryResponse> list = new ArrayList<ListSpecialDemandCategoryResponse>();
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			list = LocationRangeCategoryDao.getInstance().list(conn, status, names);
+			list = SpecialDemandCategoryDao.getInstance().list(conn, status, names);
 		} catch (Exception ex) {
 			throw new SQLException(ex);
 		} finally {
@@ -311,14 +311,14 @@ public class LocationManager {
 		return list;
 	}
 
-	public List<ListLocationItemResponse> listItem(final List<Integer> categories, final List<Integer> refers,
+	public List<ListSpecialDemandItemResponse> listItem(final List<Integer> categories, final List<Integer> refers,
 			final String status, final List<String> names) throws SQLException {
 		Connection conn = null;
-		List<ListLocationItemResponse> list = new ArrayList<ListLocationItemResponse>();
+		List<ListSpecialDemandItemResponse> list = new ArrayList<ListSpecialDemandItemResponse>();
 		try {
 			conn = ProxoolConnection.getInstance().connectCRM();
 			conn.setAutoCommit(false);
-			list = LocationRangeItemDao.getInstance().list(conn, categories, refers, status, names);
+			list = SpecialDemandItemDao.getInstance().list(conn, categories, refers, status, names);
 		} catch (Exception ex) {
 			throw new SQLException(ex);
 		} finally {

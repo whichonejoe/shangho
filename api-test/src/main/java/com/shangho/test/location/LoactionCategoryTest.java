@@ -24,35 +24,11 @@ public class LoactionCategoryTest {
 	final String url = "http://127.0.0.1:8080/shangho-blackcore";
 
 	@Test
-	public void aaa() {
-		List<String> list = new ArrayList<String>();
-		list.add("a");
-		list.add("bc");
-
-		System.out.println(handleSQLLikeStatement(list));
-	}
-
-	private String handleSQLLikeStatement(final List<String> list) {
-		String statement = "";
-		final String likeStatement = " like '%@%' ";
-		final String orStatement = " or ";
-		final int index = list.size() - 1;
-		for (int i = 0; i <= index; i++) {
-			statement += likeStatement.replace("@", list.get(i));
-			if (i == index)
-				break;
-			else
-				statement += orStatement;
-		}
-		return statement;
-	}
-
-	@Test
 	public void testList() {
 		List<String> list = new ArrayList<String>();
 		list.add("我");
 		list.add("bc");
-		ListLocationCategoryRequest request = new ListLocationCategoryRequest("token", "1", list);
+		ListLocationCategoryRequest request = new ListLocationCategoryRequest("token", null, null);
 
 		HttpClient httpclient = HttpClients.createDefault();
 		HttpPost httppost = new HttpPost(url + "/location/category/list");
@@ -70,7 +46,6 @@ public class LoactionCategoryTest {
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

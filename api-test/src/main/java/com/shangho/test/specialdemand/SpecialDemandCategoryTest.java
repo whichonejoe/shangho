@@ -1,4 +1,4 @@
-package com.shangho.test.location;
+package com.shangho.test.specialdemand;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,31 +14,24 @@ import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import com.google.gson.Gson;
-import com.shangho.blackcore.api.location.request.DeleteLocationItemRequest;
-import com.shangho.blackcore.api.location.request.InsertLocationItemRequest;
-import com.shangho.blackcore.api.location.request.ListLocationItemRequest;
-import com.shangho.blackcore.api.location.request.UpdateLocationItemRequest;
 import com.shangho.blackcore.api.request.APIRequest;
+import com.shangho.blackcore.api.specialdemand.request.DeleteSpecialDemandCategoryRequest;
+import com.shangho.blackcore.api.specialdemand.request.InsertSpecialDemandCategoryRequest;
+import com.shangho.blackcore.api.specialdemand.request.ListSpecialDemandCategoryRequest;
+import com.shangho.blackcore.api.specialdemand.request.UpdateSpecialDemandCategoryRequest;
 
-public class LoactionItemTest {
+public class SpecialDemandCategoryTest {
 	final String url = "http://127.0.0.1:8080/shangho-blackcore";
 
 	@Test
 	public void testList() {
-		List<Integer> categories = new ArrayList<Integer>();
-		categories.add(4);
-		categories.add(6);
-		List<Integer> refers = new ArrayList<Integer>();
-		refers.add(5);
-		
 		List<String> list = new ArrayList<String>();
 		list.add("我");
-		list.add("bc");
-
-		ListLocationItemRequest request = new ListLocationItemRequest("token", null, categories, refers, list);
+		list.add("d");
+		ListSpecialDemandCategoryRequest request = new ListSpecialDemandCategoryRequest("token", null, list);
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/list");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/list");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -59,10 +52,11 @@ public class LoactionItemTest {
 
 	@Test
 	public void testInsert() {
-		InsertLocationItemRequest request = new InsertLocationItemRequest("token", 5, 4, "namee", "1", null);
+		InsertSpecialDemandCategoryRequest request = new InsertSpecialDemandCategoryRequest("token", "specialdemand444",
+				"specialdemandD4444DD", "0");
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/insert");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/insert");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -84,10 +78,12 @@ public class LoactionItemTest {
 
 	@Test
 	public void testFailInsert() {
-		InsertLocationItemRequest request = new InsertLocationItemRequest("token", 4, 6, "namee", "1", null);
+		// InsertSpecialDemandCategoryRequest request = new
+		// InsertSpecialDemandCategoryRequest("token", null, "0", null);
+		InsertSpecialDemandCategoryRequest request = new InsertSpecialDemandCategoryRequest("token", "name", "s", "33");
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/insert");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/insert");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -109,10 +105,11 @@ public class LoactionItemTest {
 
 	@Test
 	public void testFailStatusInsert() {
-		InsertLocationItemRequest request = new InsertLocationItemRequest("token", 5, 0, "namee", "1w", null);
+		InsertSpecialDemandCategoryRequest request = new InsertSpecialDemandCategoryRequest("token", "isdj", "0e",
+				null);
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/insert");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/insert");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -134,10 +131,11 @@ public class LoactionItemTest {
 
 	@Test
 	public void testUpdate() {
-		UpdateLocationItemRequest request = new UpdateLocationItemRequest("token", 4, 4, 5, "nawwwme3", "0", "eqw3");
+		UpdateSpecialDemandCategoryRequest request = new UpdateSpecialDemandCategoryRequest("token", 1, "update!",
+				"updateDeas", "1");
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/update");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/update");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -158,10 +156,61 @@ public class LoactionItemTest {
 
 	@Test
 	public void testFailUpdate() {
-		UpdateLocationItemRequest request = new UpdateLocationItemRequest("token", 4, 4, 7, "nawwwme3", "0", "eqw3");
+		UpdateSpecialDemandCategoryRequest request = new UpdateSpecialDemandCategoryRequest("token", 7, "name3", "0",
+				"3");
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/update");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/update");
+
+		APIRequest enity = new APIRequest(request);
+		Gson gson = new Gson();
+		String json = gson.toJson(enity);
+		System.out.println(json);
+		try {
+			StringEntity entity = new StringEntity(json, "UTF-8");
+			httppost.setEntity(entity);
+			HttpResponse response = httpclient.execute(httppost);
+			String result = EntityUtils.toString(response.getEntity());
+			System.out.println(result);
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testFailStatusUpdate() {
+		UpdateSpecialDemandCategoryRequest request = new UpdateSpecialDemandCategoryRequest("token", 3, "name3", "p",
+				"3");
+
+		HttpClient httpclient = HttpClients.createDefault();
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/update");
+
+		APIRequest enity = new APIRequest(request);
+		Gson gson = new Gson();
+		String json = gson.toJson(enity);
+		System.out.println(json);
+		try {
+			StringEntity entity = new StringEntity(json, "UTF-8");
+			httppost.setEntity(entity);
+			HttpResponse response = httpclient.execute(httppost);
+			String result = EntityUtils.toString(response.getEntity());
+			System.out.println(result);
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void testNotExistedIDUpdate() {
+		UpdateSpecialDemandCategoryRequest request = new UpdateSpecialDemandCategoryRequest("token", 88, "name3", "1",
+				"0");
+
+		HttpClient httpclient = HttpClients.createDefault();
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/update");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();
@@ -182,10 +231,10 @@ public class LoactionItemTest {
 
 	@Test
 	public void testDelete() {
-		DeleteLocationItemRequest request = new DeleteLocationItemRequest("token", 3);
+		DeleteSpecialDemandCategoryRequest request = new DeleteSpecialDemandCategoryRequest("token", 3);
 
 		HttpClient httpclient = HttpClients.createDefault();
-		HttpPost httppost = new HttpPost(url + "/location/item/delete");
+		HttpPost httppost = new HttpPost(url + "/specialdemand/category/delete");
 
 		APIRequest enity = new APIRequest(request);
 		Gson gson = new Gson();

@@ -1,4 +1,4 @@
-package com.shangho.dao.crm.location;
+package com.shangho.dao.crm.specialdemand;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,22 +10,22 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.location.response.ListLocationCategoryResponse;
+import com.shangho.blackcore.api.specialdemand.response.ListSpecialDemandCategoryResponse;
 import com.shangho.dao.crm.utils.SQLFromatUtils;
 
-public class LocationRangeCategoryDao {
-	public LocationRangeCategoryDao() {
+public class SpecialDemandCategoryDao {
+	public SpecialDemandCategoryDao() {
 	}
 
 	private static class LazyHolder {
-		public static final LocationRangeCategoryDao INSTANCE = new LocationRangeCategoryDao();
+		public static final SpecialDemandCategoryDao INSTANCE = new SpecialDemandCategoryDao();
 	}
 
-	public static LocationRangeCategoryDao getInstance() {
+	public static SpecialDemandCategoryDao getInstance() {
 		return LazyHolder.INSTANCE;
 	}
 
-	private final static String INSERT = "INSERT INTO location_range_category(status,name,description,creation_time)VALUES"
+	private final static String INSERT = "INSERT INTO special_demand_category(status,name,description,creation_time)VALUES"
 			+ "(?,?,?,NOW());";
 
 	public int insert(final Connection conn, final String status, final String name, final String description)
@@ -45,7 +45,7 @@ public class LocationRangeCategoryDao {
 			if (rs.next()) {
 				id = rs.getInt(1);
 			} else {
-				throw new SQLException("location_range_category insert fail.");
+				throw new SQLException("special_demand_category insert fail.");
 			}
 
 		} finally {
@@ -56,7 +56,7 @@ public class LocationRangeCategoryDao {
 		return id;
 	}
 
-	private final static String UPDATE = "UPDATE location_range_category SET status=?,name=?,description=? WHERE id=?;";
+	private final static String UPDATE = "UPDATE special_demand_category SET status=?,name=?,description=? WHERE id=?;";
 
 	public void update(final Connection conn, final int ID, final String status, final String name,
 			final String description) throws SQLException {
@@ -77,7 +77,7 @@ public class LocationRangeCategoryDao {
 		}
 	}
 
-	private final static String DELETE = "DELETE FROM location_range_category WHERE id=?;";
+	private final static String DELETE = "DELETE FROM special_demand_category WHERE id=?;";
 
 	public void delete(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -94,7 +94,7 @@ public class LocationRangeCategoryDao {
 		}
 	}
 
-	private final static String SELECT_NAME = "SELECT name FROM location_range_category WHERE "
+	private final static String SELECT_NAME = "SELECT name FROM special_demand_category WHERE "
 			+ "id = ? AND status = ?;";
 
 	public boolean isExist(final Connection conn, final int ID, final String status) throws SQLException {
@@ -121,7 +121,7 @@ public class LocationRangeCategoryDao {
 		return isExist;
 	}
 
-	private final static String SELECT_BY_ID = "SELECT name FROM location_range_category WHERE " + "id = ? ;";
+	private final static String SELECT_BY_ID = "SELECT name FROM special_demand_category WHERE " + "id = ? ;";
 
 	public boolean isExist(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -146,12 +146,12 @@ public class LocationRangeCategoryDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT status,name,description FROM location_range_category ";
+	private final static String SELECT = "SELECT status,name,description FROM special_demand_category ";
 
-	public List<ListLocationCategoryResponse> list(final Connection conn, final String status, final List<String> names)
+	public List<ListSpecialDemandCategoryResponse> list(final Connection conn, final String status, final List<String> names)
 			throws SQLException {
 		PreparedStatement psmt = null;
-		final List<ListLocationCategoryResponse> list = new ArrayList<ListLocationCategoryResponse>();
+		final List<ListSpecialDemandCategoryResponse> list = new ArrayList<ListSpecialDemandCategoryResponse>();
 		try {
 			String statement = "";
 			int x = 0;
@@ -170,7 +170,7 @@ public class LocationRangeCategoryDao {
 			ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListLocationCategoryResponse(rs.getString("status"), rs.getString("name"),
+				list.add(new ListSpecialDemandCategoryResponse(rs.getString("status"), rs.getString("name"),
 						rs.getString("description")));
 			}
 

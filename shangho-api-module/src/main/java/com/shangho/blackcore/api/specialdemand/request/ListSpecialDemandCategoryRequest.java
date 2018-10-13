@@ -1,9 +1,9 @@
-package com.shangho.blackcore.api.location.request;
+package com.shangho.blackcore.api.specialdemand.request;
 
 import java.util.List;
 
-public class ListLocationCategoryRequest implements java.io.Serializable {
-	private static final long serialVersionUID = 2526600160878602467L;
+public class ListSpecialDemandCategoryRequest implements java.io.Serializable {
+	private static final long serialVersionUID = 3929926236958928696L;
 	private String token;
 	private String status;
 	private List<String> names;
@@ -27,7 +27,7 @@ public class ListLocationCategoryRequest implements java.io.Serializable {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("ListLocationCategoryRequest [token=");
+		builder.append("ListSpecialDemandCategoryRequest [token=");
 		builder.append(token);
 		builder.append(", status=");
 		builder.append(status);
@@ -37,7 +37,7 @@ public class ListLocationCategoryRequest implements java.io.Serializable {
 		return builder.toString();
 	}
 
-	public ListLocationCategoryRequest(String token, String status, List<String> names) {
+	public ListSpecialDemandCategoryRequest(String token, String status, List<String> names) {
 		super();
 		this.token = token;
 		this.status = status;

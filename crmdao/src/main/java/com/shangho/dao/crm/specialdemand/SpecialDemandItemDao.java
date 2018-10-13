@@ -1,4 +1,4 @@
-package com.shangho.dao.crm.location;
+package com.shangho.dao.crm.specialdemand;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,22 +10,22 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.location.response.ListLocationItemResponse;
+import com.shangho.blackcore.api.specialdemand.response.ListSpecialDemandItemResponse;
 import com.shangho.dao.crm.utils.SQLFromatUtils;
 
-public class LocationRangeItemDao {
-	public LocationRangeItemDao() {
+public class SpecialDemandItemDao {
+	public SpecialDemandItemDao() {
 	}
 
 	private static class LazyHolder {
-		public static final LocationRangeItemDao INSTANCE = new LocationRangeItemDao();
+		public static final SpecialDemandItemDao INSTANCE = new SpecialDemandItemDao();
 	}
 
-	public static LocationRangeItemDao getInstance() {
+	public static SpecialDemandItemDao getInstance() {
 		return LazyHolder.INSTANCE;
 	}
 
-	private final static String INSERT = "INSERT INTO location_range_item(location_range_category_id,refer_id,"
+	private final static String INSERT = "INSERT INTO special_demand_itme(special_demand_category_id,refer_id,"
 			+ "status,name,description,creation_time)VALUES(?,?,?,?,?,NOW());";
 
 	public int insert(final Connection conn, final int categoryID, final int referID, final String status,
@@ -50,7 +50,7 @@ public class LocationRangeItemDao {
 			if (rs.next()) {
 				id = rs.getInt(1);
 			} else {
-				throw new SQLException("location_range_item insert fail.");
+				throw new SQLException("special_demand_itme insert fail.");
 			}
 
 		} finally {
@@ -61,7 +61,7 @@ public class LocationRangeItemDao {
 		return id;
 	}
 
-	private final static String UPDATE = "UPDATE location_range_item SET location_range_category_id=?,refer_id=?,"
+	private final static String UPDATE = "UPDATE special_demand_itme SET special_demand_category_id=?,refer_id=?,"
 			+ "status=?,name=?,description=? WHERE id=?;";
 
 	public void update(final Connection conn, final int ID, final int categoryID, final int referID,
@@ -88,7 +88,7 @@ public class LocationRangeItemDao {
 		}
 	}
 
-	private final static String DELETE = "DELETE FROM location_range_item WHERE id=?;";
+	private final static String DELETE = "DELETE FROM special_demand_itme WHERE id=?;";
 
 	public void delete(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -105,25 +105,7 @@ public class LocationRangeItemDao {
 		}
 	}
 
-	private final static String DELETE_WITH_CATEGORY = "DELETE FROM location_range_item WHERE "
-			+ "location_range_category_id=?;";
-
-	public void deleteWithCategoryID(final Connection conn, final int categoryID) throws SQLException {
-		PreparedStatement psmt = null;
-		try {
-			psmt = conn.prepareStatement(DELETE_WITH_CATEGORY);
-			int i = 0;
-			psmt.setInt(++i, categoryID);
-			psmt.addBatch();
-			psmt.executeBatch();
-		} finally {
-			if (psmt != null && !psmt.isClosed()) {
-				psmt.close();
-			}
-		}
-	}
-
-	private final static String DELETE_WITH_REFERID = "DELETE FROM location_range_item WHERE " + "refer_id=?;";
+	private final static String DELETE_WITH_REFERID = "DELETE FROM special_demand_itme WHERE " + "refer_id=?;";
 
 	public void deleteWithReferID(final Connection conn, final int referID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -140,7 +122,25 @@ public class LocationRangeItemDao {
 		}
 	}
 
-	private final static String SELECT_NAME = "SELECT name FROM location_range_item WHERE " + "id = ? AND status = ?;";
+	private final static String DELETE_WITH_CATEGORY = "DELETE FROM special_demand_itme WHERE "
+			+ "special_demand_category_id=?;";
+
+	public void deleteWithCategoryID(final Connection conn, final int categoryID) throws SQLException {
+		PreparedStatement psmt = null;
+		try {
+			psmt = conn.prepareStatement(DELETE_WITH_CATEGORY);
+			int i = 0;
+			psmt.setInt(++i, categoryID);
+			psmt.addBatch();
+			psmt.executeBatch();
+		} finally {
+			if (psmt != null && !psmt.isClosed()) {
+				psmt.close();
+			}
+		}
+	}
+
+	private final static String SELECT_NAME = "SELECT name FROM special_demand_itme WHERE " + "id = ? AND status = ?;";
 
 	public boolean isExist(final Connection conn, final int ID, final String status) throws SQLException {
 		PreparedStatement psmt = null;
@@ -166,7 +166,7 @@ public class LocationRangeItemDao {
 		return isExist;
 	}
 
-	private final static String SELECT_BY_ID = "SELECT name FROM location_range_item WHERE " + "id = ? ;";
+	private final static String SELECT_BY_ID = "SELECT name FROM special_demand_itme WHERE " + "id = ? ;";
 
 	public boolean isExist(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -192,20 +192,20 @@ public class LocationRangeItemDao {
 	}
 
 	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,"
-			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM location_range_item C "
-			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM location_range_item A "
-			+ "LEFT JOIN location_range_category B ON A.location_range_category_id = B.id ";
+			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_itme C "
+			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM special_demand_itme A "
+			+ "LEFT JOIN SpecialDemand_range_category B ON A.special_demand_category_id = B.id ";
 
-	public List<ListLocationItemResponse> list(final Connection conn, final List<Integer> categories,
+	public List<ListSpecialDemandItemResponse> list(final Connection conn, final List<Integer> categories,
 			final List<Integer> refers, final String status, final List<String> names) throws SQLException {
 		PreparedStatement psmt = null;
-		final List<ListLocationItemResponse> list = new ArrayList<ListLocationItemResponse>();
+		final List<ListSpecialDemandItemResponse> list = new ArrayList<ListSpecialDemandItemResponse>();
 		try {
 			String statement = "";
 			int x = 0;
 			if (!categories.isEmpty())
 				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
-						+ SQLFromatUtils.handleSQLLikeStatementWithInt(categories, "A.location_range_category_id");
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(categories, "A.special_demand_category_id");
 			if (!refers.isEmpty())
 				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
 						+ SQLFromatUtils.handleSQLLikeStatementWithInt(refers, "A.refer_id");
@@ -224,7 +224,7 @@ public class LocationRangeItemDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListLocationItemResponse(rs.getString("category_name"), rs.getString("refer_name"),
+				list.add(new ListSpecialDemandItemResponse(rs.getString("category_name"), rs.getString("refer_name"),
 						rs.getString("status"), rs.getString("name"), rs.getString("description")));
 			}
 

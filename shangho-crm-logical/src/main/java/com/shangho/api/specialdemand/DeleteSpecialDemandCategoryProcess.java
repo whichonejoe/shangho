@@ -1,23 +1,19 @@
-package com.shangho.api.location;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.shangho.api.specialdemand;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.location.request.ListLocationCategoryRequest;
-import com.shangho.blackcore.api.location.response.ListLocationCategoryResponse;
+import com.shangho.blackcore.api.specialdemand.request.DeleteSpecialDemandCategoryRequest;
 import com.shangho.common.abs.AbstractAPIProcess;
-import com.shangho.dao.crm.manager.LocationManager;
+import com.shangho.dao.crm.manager.SpecialDemandManager;
 import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
 
-public class ListLocationCategoryProcess extends AbstractAPIProcess {
-	private ListLocationCategoryRequest entity;
+public class DeleteSpecialDemandCategoryProcess extends AbstractAPIProcess {
+	private DeleteSpecialDemandCategoryRequest entity;
 	private final int step = 1;
 
-	public ListLocationCategoryProcess(ListLocationCategoryRequest entity) {
+	public DeleteSpecialDemandCategoryProcess(DeleteSpecialDemandCategoryRequest entity) {
 		this.entity = entity;
 	}
 
@@ -28,10 +24,9 @@ public class ListLocationCategoryProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		final List<ListLocationCategoryResponse> list = LocationManager.getInstance().listCategory(entity.getStatus(),
-				entity.getNames());
-		LogAction.getInstance().debug("step 1/" + step + ":category list success.");
-		return list;
+		SpecialDemandManager.getInstance().deleteCategory(entity.getId());
+		LogAction.getInstance().debug("step 1/" + step + ":category delete success.");
+		return null;
 	}
 
 	@Override
@@ -43,8 +38,8 @@ public class ListLocationCategoryProcess extends AbstractAPIProcess {
 		if (StringUtils.isBlank(entity.getToken())) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(token).");
 		}
-		if (entity.getNames() == null) {
-			entity.setNames(new ArrayList<String>());
+		if (entity.getId() <= 0) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(id).");
 		}
 	}
 

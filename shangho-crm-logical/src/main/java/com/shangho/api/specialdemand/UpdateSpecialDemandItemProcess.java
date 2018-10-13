@@ -1,20 +1,20 @@
-package com.shangho.api.location;
+package com.shangho.api.specialdemand;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.location.request.UpdateLocationCategoryRequest;
+import com.shangho.blackcore.api.specialdemand.request.UpdateSpecialDemandItemRequest;
 import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
-import com.shangho.dao.crm.manager.LocationManager;
+import com.shangho.dao.crm.manager.SpecialDemandManager;
 import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
 
-public class UpdateLocationCategoryProcess extends AbstractAPIProcess {
-	private UpdateLocationCategoryRequest entity;
+public class UpdateSpecialDemandItemProcess extends AbstractAPIProcess {
+	private UpdateSpecialDemandItemRequest entity;
 	private final int step = 1;
 
-	public UpdateLocationCategoryProcess(UpdateLocationCategoryRequest entity) {
+	public UpdateSpecialDemandItemProcess(UpdateSpecialDemandItemRequest entity) {
 		this.entity = entity;
 	}
 
@@ -25,9 +25,9 @@ public class UpdateLocationCategoryProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		LocationManager.getInstance().updateCategory(entity.getId(), entity.getStatus(), entity.getName(),
-				entity.getDescription());
-		LogAction.getInstance().debug("step 1/" + step + ":category update success.");
+		SpecialDemandManager.getInstance().updateItem(entity.getId(), entity.getCategoryid(), entity.getReferid(),
+				entity.getStatus(), entity.getName(), entity.getDescription());
+		LogAction.getInstance().debug("step 1/" + step + ":item update success.");
 		return null;
 	}
 
@@ -39,6 +39,12 @@ public class UpdateLocationCategoryProcess extends AbstractAPIProcess {
 		}
 		if (entity.getId() <= 0) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(id).");
+		}
+		if (entity.getCategoryid() <= 0) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(category).");
+		}
+		if (entity.getReferid() < 0) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(refer ID).");
 		}
 		if (StringUtils.isBlank(entity.getToken())) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(token).");
@@ -65,8 +71,10 @@ public class UpdateLocationCategoryProcess extends AbstractAPIProcess {
 		if (entity.getDescription() != null && entity.getDescription().length() > 500) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(description length 500).");
 		}
-		if (!LocationManager.getInstance().isCategoryExisted(entity.getId())) {
-			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(nof find id).");
+		if (!SpecialDemandManager.getInstance().checkItemUpdateInfo(entity.getId(), entity.getCategoryid(),
+				entity.getReferid())) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT,
+					"Request is illegal(not find ID¡Bcategory ID or refer ID).");
 		}
 	}
 
