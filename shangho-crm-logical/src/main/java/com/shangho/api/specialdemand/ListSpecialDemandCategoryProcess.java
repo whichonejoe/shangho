@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.shangho.blackcore.api.specialdemand.request.ListSpecialDemandCategoryRequest;
 import com.shangho.blackcore.api.specialdemand.response.ListSpecialDemandCategoryResponse;
+import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
 import com.shangho.dao.crm.manager.SpecialDemandManager;
 import com.shangho.utils.exception.SHException;
@@ -28,8 +29,8 @@ public class ListSpecialDemandCategoryProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		final List<ListSpecialDemandCategoryResponse> list = SpecialDemandManager.getInstance().listCategory(entity.getStatus(),
-				entity.getNames());
+		final List<ListSpecialDemandCategoryResponse> list = SpecialDemandManager.getInstance()
+				.listCategory(entity.getStatus(), entity.getNames());
 		LogAction.getInstance().debug("step 1/" + step + ":category list success.");
 		return list;
 	}
@@ -45,6 +46,16 @@ public class ListSpecialDemandCategoryProcess extends AbstractAPIProcess {
 		}
 		if (entity.getNames() == null) {
 			entity.setNames(new ArrayList<String>());
+		}
+		if (!StringUtils.isBlank(entity.getStatus())) {
+			boolean isPass = false;
+			for (final StatusMean statusEntity : StatusMean.values())
+				if (entity.getStatus().equals(statusEntity.getValue())) {
+					isPass = true;
+					break;
+				}
+			if (!isPass)
+				throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found status).");
 		}
 	}
 

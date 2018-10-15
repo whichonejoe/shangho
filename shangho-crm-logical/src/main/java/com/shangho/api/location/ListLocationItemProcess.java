@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.shangho.blackcore.api.location.request.ListLocationItemRequest;
 import com.shangho.blackcore.api.location.response.ListLocationItemResponse;
+import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
 import com.shangho.dao.crm.manager.LocationManager;
 import com.shangho.utils.exception.SHException;
@@ -51,6 +52,16 @@ public class ListLocationItemProcess extends AbstractAPIProcess {
 		}
 		if (entity.getRefers() == null) {
 			entity.setRefers(new ArrayList<Integer>());
+		}
+		if (!StringUtils.isBlank(entity.getStatus())) {
+			boolean isPass = false;
+			for (final StatusMean statusEntity : StatusMean.values())
+				if (entity.getStatus().equals(statusEntity.getValue())) {
+					isPass = true;
+					break;
+				}
+			if (!isPass)
+				throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found status).");
 		}
 	}
 
