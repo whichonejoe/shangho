@@ -25,7 +25,6 @@ public class SystemInitialListener implements ServletContextListener {
 			logger.error(e.getMessage(), e);
 			System.exit(0);
 		}
-
 	}
 
 	@Override

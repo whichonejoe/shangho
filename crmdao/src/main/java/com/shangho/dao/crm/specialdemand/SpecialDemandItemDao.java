@@ -191,7 +191,7 @@ public class SpecialDemandItemDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,"
+	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,A.id,"
 			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_itme C "
 			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM special_demand_itme A "
 			+ "LEFT JOIN SpecialDemand_range_category B ON A.special_demand_category_id = B.id ";
@@ -224,8 +224,9 @@ public class SpecialDemandItemDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListSpecialDemandItemResponse(rs.getString("category_name"), rs.getString("refer_name"),
-						rs.getString("status"), rs.getString("name"), rs.getString("description")));
+				list.add(new ListSpecialDemandItemResponse(rs.getInt("id"), rs.getString("category_name"),
+						rs.getString("refer_name"), rs.getString("status"), rs.getString("name"),
+						rs.getString("description")));
 			}
 
 		} finally {

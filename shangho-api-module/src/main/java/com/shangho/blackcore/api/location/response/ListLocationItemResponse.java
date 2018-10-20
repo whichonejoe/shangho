@@ -2,6 +2,7 @@ package com.shangho.blackcore.api.location.response;
 
 public class ListLocationItemResponse implements java.io.Serializable {
 	private static final long serialVersionUID = -4553237116178937153L;
+	private int id;
 	private String categoryname;
 	private String refername;
 	private String status;
@@ -31,7 +32,9 @@ public class ListLocationItemResponse implements java.io.Serializable {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("ListLocationItemResponse [categoryname=");
+		builder.append("ListLocationItemResponse [id=");
+		builder.append(id);
+		builder.append(", categoryname=");
 		builder.append(categoryname);
 		builder.append(", refername=");
 		builder.append(refername);
@@ -45,13 +48,15 @@ public class ListLocationItemResponse implements java.io.Serializable {
 		return builder.toString();
 	}
 
-	public ListLocationItemResponse(String categoryname, String refername, String status, String name,
+	public ListLocationItemResponse(int id, String categoryname, String refername, String status, String name,
 			String description) {
 		super();
+		this.id = id;
 		this.categoryname = categoryname;
 		this.refername = refername;
 		this.status = status;
 		this.name = name;
 		this.description = description;
 	}
+
 }

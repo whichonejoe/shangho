@@ -146,10 +146,10 @@ public class SpecialDemandCategoryDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT status,name,description FROM special_demand_category ";
+	private final static String SELECT = "SELECT id,status,name,description FROM special_demand_category ";
 
-	public List<ListSpecialDemandCategoryResponse> list(final Connection conn, final String status, final List<String> names)
-			throws SQLException {
+	public List<ListSpecialDemandCategoryResponse> list(final Connection conn, final String status,
+			final List<String> names) throws SQLException {
 		PreparedStatement psmt = null;
 		final List<ListSpecialDemandCategoryResponse> list = new ArrayList<ListSpecialDemandCategoryResponse>();
 		try {
@@ -170,8 +170,8 @@ public class SpecialDemandCategoryDao {
 			ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListSpecialDemandCategoryResponse(rs.getString("status"), rs.getString("name"),
-						rs.getString("description")));
+				list.add(new ListSpecialDemandCategoryResponse(rs.getInt("id"), rs.getString("status"),
+						rs.getString("name"), rs.getString("description")));
 			}
 
 		} finally {

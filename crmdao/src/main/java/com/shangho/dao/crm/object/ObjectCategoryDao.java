@@ -123,7 +123,7 @@ public class ObjectCategoryDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT status,type,sort,name,description FROM object_category ";
+	private final static String SELECT = "SELECT id,status,type,sort,name,description FROM object_category ";
 
 	public List<ListObjectCategoryResponse> list(final Connection conn, final String status, final String type,
 			final List<String> names, final String sortOrderBy) throws SQLException {
@@ -152,8 +152,8 @@ public class ObjectCategoryDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListObjectCategoryResponse(rs.getString("status"), rs.getString("type"), rs.getInt("sort"),
-						rs.getString("name"), rs.getString("description")));
+				list.add(new ListObjectCategoryResponse(rs.getInt("id"), rs.getString("status"), rs.getString("type"),
+						rs.getInt("sort"), rs.getString("name"), rs.getString("description")));
 			}
 		} finally {
 			if (psmt != null && !psmt.isClosed()) {

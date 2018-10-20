@@ -146,7 +146,7 @@ public class LocationRangeCategoryDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT status,name,description FROM location_range_category ";
+	private final static String SELECT = "SELECT id,status,name,description FROM location_range_category ";
 
 	public List<ListLocationCategoryResponse> list(final Connection conn, final String status, final List<String> names)
 			throws SQLException {
@@ -170,7 +170,7 @@ public class LocationRangeCategoryDao {
 			ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListLocationCategoryResponse(rs.getString("status"), rs.getString("name"),
+				list.add(new ListLocationCategoryResponse(rs.getInt("id"), rs.getString("status"), rs.getString("name"),
 						rs.getString("description")));
 			}
 
