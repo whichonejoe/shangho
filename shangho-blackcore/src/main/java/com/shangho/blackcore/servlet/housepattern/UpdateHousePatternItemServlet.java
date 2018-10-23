@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.shangho.api.housepattern.UpdateHousePatternItemProcess;
+import com.shangho.api.customerdemand.UpdateHousePatternItemProcess;
 import com.shangho.blackcore.api.housepattern.request.UpdateHousePatternItemRequest;
 import com.shangho.blackcore.api.parser.APIParser;
 import com.shangho.blackcore.api.parser.APIServlet;

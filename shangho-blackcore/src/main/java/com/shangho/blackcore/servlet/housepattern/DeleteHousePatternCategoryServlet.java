@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.shangho.api.housepattern.DeleteHousePatternCategoryProcess;
+import com.shangho.api.customerdemand.DeleteCustomerDemandProcess;
 import com.shangho.blackcore.api.housepattern.request.DeleteHousePatternCategoryRequest;
 import com.shangho.blackcore.api.parser.APIParser;
 import com.shangho.blackcore.api.parser.APIServlet;
@@ -23,7 +23,7 @@ public class DeleteHousePatternCategoryServlet extends APIServlet {
 		@SuppressWarnings("unchecked")
 		final DeleteHousePatternCategoryRequest entity = (DeleteHousePatternCategoryRequest) APIParser.getInstance()
 				.parse(apiRequest, DeleteHousePatternCategoryRequest.class);
-		return new DeleteHousePatternCategoryProcess(entity).execute();
+		return new DeleteCustomerDemandProcess(entity).execute();
 	}
 
 	@Override
