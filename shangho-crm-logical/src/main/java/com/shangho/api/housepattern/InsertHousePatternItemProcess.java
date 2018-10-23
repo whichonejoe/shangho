@@ -1,21 +1,20 @@
-package com.shangho.api.customerdemand;
+package com.shangho.api.housepattern;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.housepattern.request.UpdateHousePatternCategoryRequest;
+import com.shangho.blackcore.api.housepattern.request.InsertHousePatternItemRequest;
 import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
 import com.shangho.dao.crm.manager.HousePatternManager;
-import com.shangho.dao.crm.manager.ObjectManager;
 import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
 
-public class UpdateHousePatternCategoryProcess extends AbstractAPIProcess {
-	private UpdateHousePatternCategoryRequest entity;
+public class InsertHousePatternItemProcess extends AbstractAPIProcess {
+	private InsertHousePatternItemRequest entity;
 	private final int step = 1;
 
-	public UpdateHousePatternCategoryProcess(UpdateHousePatternCategoryRequest entity) {
+	public InsertHousePatternItemProcess(InsertHousePatternItemRequest entity) {
 		this.entity = entity;
 	}
 
@@ -26,10 +25,10 @@ public class UpdateHousePatternCategoryProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		HousePatternManager.getInstance().updateCategory(entity.getId(), entity.getStatus(), entity.getSort(),
-				entity.getName());
-		LogAction.getInstance().debug("step 1/" + step + ":category update success.");
-		return null;
+		final int ID = HousePatternManager.getInstance().insertItem(entity.getCategoryid(), entity.getStatus(),
+				entity.getName(), entity.getSort());
+		LogAction.getInstance().debug("step 1/" + step + ":item insert success.");
+		return ID;
 	}
 
 	@Override
@@ -38,13 +37,12 @@ public class UpdateHousePatternCategoryProcess extends AbstractAPIProcess {
 		if (entity == null) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal.");
 		}
-		if (entity.getId() <= 0) {
-			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(id).");
-		}
 		if (StringUtils.isBlank(entity.getToken())) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(token).");
 		}
-
+		if (entity.getCategoryid() <= 0) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(category id).");
+		}
 		if (entity.getSort() < 0) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(sort < 0).");
 		}
@@ -64,13 +62,8 @@ public class UpdateHousePatternCategoryProcess extends AbstractAPIProcess {
 		if (!isPass) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found status).");
 		}
-
 		if (entity.getName().length() > 50) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(name length 50).");
-		}
-
-		if (!ObjectManager.getInstance().isCategoryExisted(entity.getId())) {
-			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(nof found id).");
 		}
 	}
 

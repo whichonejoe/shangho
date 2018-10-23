@@ -1,4 +1,4 @@
-package com.shangho.api.customerdemand;
+package com.shangho.api.housepattern;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -58,10 +58,6 @@ public class InsertHousePatternCategoryProcess extends AbstractAPIProcess {
 		}
 		if (!isPass) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found status).");
-		}
-
-		if (!isPass) {
-			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found type).");
 		}
 		if (entity.getName().length() > 50) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(name length 50).");

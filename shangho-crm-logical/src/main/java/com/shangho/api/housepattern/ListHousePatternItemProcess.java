@@ -1,12 +1,12 @@
-package com.shangho.api.customerdemand;
+package com.shangho.api.housepattern;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.housepattern.request.ListHousePatternCategoryRequest;
-import com.shangho.blackcore.api.housepattern.response.ListHousePatternCategoryResponse;
+import com.shangho.blackcore.api.housepattern.request.ListHousePatternItemRequest;
+import com.shangho.blackcore.api.housepattern.response.ListHousePatternItemResponse;
 import com.shangho.commom.SQLSatementIntf;
 import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
@@ -15,11 +15,11 @@ import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
 
-public class ListHousePatternCategoryProcess extends AbstractAPIProcess {
-	private ListHousePatternCategoryRequest entity;
+public class ListHousePatternItemProcess extends AbstractAPIProcess {
+	private ListHousePatternItemRequest entity;
 	private final int step = 1;
 
-	public ListHousePatternCategoryProcess(ListHousePatternCategoryRequest entity) {
+	public ListHousePatternItemProcess(ListHousePatternItemRequest entity) {
 		this.entity = entity;
 	}
 
@@ -30,9 +30,9 @@ public class ListHousePatternCategoryProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		final List<ListHousePatternCategoryResponse> list = HousePatternManager.getInstance()
-				.listCategory(entity.getStatus(), entity.getNames(), entity.getSortorderby());
-		LogAction.getInstance().debug("step 1/" + step + ":category list success.");
+		final List<ListHousePatternItemResponse> list = HousePatternManager.getInstance().listItem(entity.getStatus(),
+				entity.getCategories(), entity.getNames(), entity.getSortorderby());
+		LogAction.getInstance().debug("step 1/" + step + ":item list success.");
 
 		return list;
 	}
@@ -48,6 +48,9 @@ public class ListHousePatternCategoryProcess extends AbstractAPIProcess {
 		}
 		if (entity.getNames() == null) {
 			entity.setNames(new ArrayList<String>());
+		}
+		if (entity.getCategories() == null) {
+			entity.setCategories(new ArrayList<Integer>());
 		}
 		if (!StringUtils.isBlank(entity.getStatus())) {
 			boolean isPass = false;

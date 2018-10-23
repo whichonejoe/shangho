@@ -1,19 +1,19 @@
-package com.shangho.api.customerdemand;
+package com.shangho.api.housepattern;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.housepattern.request.DeleteHousePatternCategoryRequest;
+import com.shangho.blackcore.api.housepattern.request.DeleteHousePatternItemRequest;
 import com.shangho.common.abs.AbstractAPIProcess;
 import com.shangho.dao.crm.manager.HousePatternManager;
 import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
 
-public class DeleteCustomerDemandProcess extends AbstractAPIProcess {
-	private DeleteHousePatternCategoryRequest entity;
+public class DeleteHousePatternItemProcess extends AbstractAPIProcess {
+	private DeleteHousePatternItemRequest entity;
 	private final int step = 1;
 
-	public DeleteCustomerDemandProcess(DeleteHousePatternCategoryRequest entity) {
+	public DeleteHousePatternItemProcess(DeleteHousePatternItemRequest entity) {
 		this.entity = entity;
 	}
 
@@ -24,8 +24,8 @@ public class DeleteCustomerDemandProcess extends AbstractAPIProcess {
 
 	@Override
 	protected Object process() throws SHException, Exception {
-		HousePatternManager.getInstance().deleteCategory(entity.getId());
-		LogAction.getInstance().debug("step 1/" + step + ":category delete success.");
+		HousePatternManager.getInstance().deleteItem(entity.getId());
+		LogAction.getInstance().debug("step 1/" + step + ":item delete success.");
 		return null;
 	}
 
