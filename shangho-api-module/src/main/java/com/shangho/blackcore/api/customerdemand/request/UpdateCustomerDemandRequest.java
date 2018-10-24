@@ -18,7 +18,7 @@ public class UpdateCustomerDemandRequest implements java.io.Serializable {
 	private List<Integer> housepatternitemids;
 	private List<Integer> specialdemanditemids;
 	private List<Integer> locationitemids;
-	private List<String> designatepathnames;
+	private List<Integer> designatepathids;
 
 	public int getId() {
 		return id;
@@ -76,8 +76,24 @@ public class UpdateCustomerDemandRequest implements java.io.Serializable {
 		return locationitemids;
 	}
 
-	public List<String> getDesignatepathnames() {
-		return designatepathnames;
+	public List<Integer> getDesignatepathids() {
+		return designatepathids;
+	}
+
+	public void setHousepatternitemids(List<Integer> housepatternitemids) {
+		this.housepatternitemids = housepatternitemids;
+	}
+
+	public void setSpecialdemanditemids(List<Integer> specialdemanditemids) {
+		this.specialdemanditemids = specialdemanditemids;
+	}
+
+	public void setLocationitemids(List<Integer> locationitemids) {
+		this.locationitemids = locationitemids;
+	}
+
+	public void setDesignatepathids(List<Integer> designatepathids) {
+		this.designatepathids = designatepathids;
 	}
 
 	@Override
@@ -111,8 +127,8 @@ public class UpdateCustomerDemandRequest implements java.io.Serializable {
 		builder.append(specialdemanditemids);
 		builder.append(", locationitemids=");
 		builder.append(locationitemids);
-		builder.append(", designatepathnames=");
-		builder.append(designatepathnames);
+		builder.append(", designatepathids=");
+		builder.append(designatepathids);
 		builder.append("]");
 		return builder.toString();
 	}
@@ -120,7 +136,7 @@ public class UpdateCustomerDemandRequest implements java.io.Serializable {
 	public UpdateCustomerDemandRequest(int id, String token, int objectcategoryid, String status, String name,
 			int budgetmax, int budgetminimum, int sqmax, int sqminimum, int houseagemax, int houseageminimum,
 			List<Integer> housepatternitemids, List<Integer> specialdemanditemids, List<Integer> locationitemids,
-			List<String> designatepathnames) {
+			List<Integer> designatepathids) {
 		super();
 		this.id = id;
 		this.token = token;
@@ -136,7 +152,7 @@ public class UpdateCustomerDemandRequest implements java.io.Serializable {
 		this.housepatternitemids = housepatternitemids;
 		this.specialdemanditemids = specialdemanditemids;
 		this.locationitemids = locationitemids;
-		this.designatepathnames = designatepathnames;
+		this.designatepathids = designatepathids;
 	}
 
 }

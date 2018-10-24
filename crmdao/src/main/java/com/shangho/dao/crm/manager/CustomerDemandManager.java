@@ -211,4 +211,25 @@ public class CustomerDemandManager {
 		return list;
 	}
 
+	public boolean checkUpdateInfo(final int id, final int objectCategoryID) throws SQLException {
+		Connection conn = null;
+		boolean isPass = false;
+		try {
+			conn = ProxoolConnection.getInstance().connectCRM();
+			conn.setAutoCommit(false);
+			if (!CustomerDemandDao.getInstance().isExist(conn, id))
+				return false;
+			if (!ObjectManager.getInstance().isCategoryExisted(objectCategoryID))
+				return false;
+			isPass = true;
+		} catch (Exception ex) {
+			throw new SQLException(ex);
+		} finally {
+			if (conn != null && !conn.isClosed()) {
+				conn.close();
+			}
+		}
+		return isPass;
+	}
+
 }
