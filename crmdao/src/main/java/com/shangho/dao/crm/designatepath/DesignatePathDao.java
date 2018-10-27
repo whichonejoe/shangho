@@ -183,4 +183,31 @@ public class DesignatePathDao {
 		return list;
 	}
 
+	private final static String SELECT_ITEM = "SELECT COUNT(*) AS c FROM designate_path ";
+
+	public int count(final Connection conn, final List<Integer> ids) throws SQLException {
+		PreparedStatement psmt = null;
+		int count = 0;
+		try {
+			String statement = "";
+			int x = 0;
+			if (!ids.isEmpty())
+				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(ids, "id");
+
+			psmt = conn.prepareStatement(SELECT_ITEM + statement);
+
+			final ResultSet rs = psmt.executeQuery();
+
+			if (rs.next()) {
+				count = rs.getInt("c");
+			}
+		} finally {
+			if (psmt != null && !psmt.isClosed()) {
+				psmt.close();
+			}
+		}
+		return count;
+	}
+
 }

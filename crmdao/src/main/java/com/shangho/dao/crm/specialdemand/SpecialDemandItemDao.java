@@ -25,7 +25,7 @@ public class SpecialDemandItemDao {
 		return LazyHolder.INSTANCE;
 	}
 
-	private final static String INSERT = "INSERT INTO special_demand_itme(special_demand_category_id,refer_id,"
+	private final static String INSERT = "INSERT INTO special_demand_item(special_demand_category_id,refer_id,"
 			+ "status,name,description,creation_time)VALUES(?,?,?,?,?,NOW());";
 
 	public int insert(final Connection conn, final int categoryID, final int referID, final String status,
@@ -50,7 +50,7 @@ public class SpecialDemandItemDao {
 			if (rs.next()) {
 				id = rs.getInt(1);
 			} else {
-				throw new SQLException("special_demand_itme insert fail.");
+				throw new SQLException("special_demand_item insert fail.");
 			}
 
 		} finally {
@@ -61,7 +61,7 @@ public class SpecialDemandItemDao {
 		return id;
 	}
 
-	private final static String UPDATE = "UPDATE special_demand_itme SET special_demand_category_id=?,refer_id=?,"
+	private final static String UPDATE = "UPDATE special_demand_item SET special_demand_category_id=?,refer_id=?,"
 			+ "status=?,name=?,description=? WHERE id=?;";
 
 	public void update(final Connection conn, final int ID, final int categoryID, final int referID,
@@ -88,7 +88,7 @@ public class SpecialDemandItemDao {
 		}
 	}
 
-	private final static String DELETE = "DELETE FROM special_demand_itme WHERE id=?;";
+	private final static String DELETE = "DELETE FROM special_demand_item WHERE id=?;";
 
 	public void delete(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -105,7 +105,7 @@ public class SpecialDemandItemDao {
 		}
 	}
 
-	private final static String DELETE_WITH_REFERID = "DELETE FROM special_demand_itme WHERE " + "refer_id=?;";
+	private final static String DELETE_WITH_REFERID = "DELETE FROM special_demand_item WHERE " + "refer_id=?;";
 
 	public void deleteWithReferID(final Connection conn, final int referID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -122,7 +122,7 @@ public class SpecialDemandItemDao {
 		}
 	}
 
-	private final static String DELETE_WITH_CATEGORY = "DELETE FROM special_demand_itme WHERE "
+	private final static String DELETE_WITH_CATEGORY = "DELETE FROM special_demand_item WHERE "
 			+ "special_demand_category_id=?;";
 
 	public void deleteWithCategoryID(final Connection conn, final int categoryID) throws SQLException {
@@ -140,7 +140,7 @@ public class SpecialDemandItemDao {
 		}
 	}
 
-	private final static String SELECT_NAME = "SELECT name FROM special_demand_itme WHERE " + "id = ? AND status = ?;";
+	private final static String SELECT_NAME = "SELECT name FROM special_demand_item WHERE " + "id = ? AND status = ?;";
 
 	public boolean isExist(final Connection conn, final int ID, final String status) throws SQLException {
 		PreparedStatement psmt = null;
@@ -166,7 +166,7 @@ public class SpecialDemandItemDao {
 		return isExist;
 	}
 
-	private final static String SELECT_BY_ID = "SELECT name FROM special_demand_itme WHERE " + "id = ? ;";
+	private final static String SELECT_BY_ID = "SELECT name FROM special_demand_item WHERE " + "id = ? ;";
 
 	public boolean isExist(final Connection conn, final int ID) throws SQLException {
 		PreparedStatement psmt = null;
@@ -192,8 +192,8 @@ public class SpecialDemandItemDao {
 	}
 
 	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,A.id,"
-			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_itme C "
-			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM special_demand_itme A "
+			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_item C "
+			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM special_demand_item A "
 			+ "LEFT JOIN SpecialDemand_range_category B ON A.special_demand_category_id = B.id ";
 
 	public List<ListSpecialDemandItemResponse> list(final Connection conn, final List<Integer> categories,
@@ -235,5 +235,32 @@ public class SpecialDemandItemDao {
 			}
 		}
 		return list;
+	}
+
+	private final static String SELECT_ITEM = "SELECT COUNT(*) AS c FROM special_demand_item ";
+
+	public int count(final Connection conn, final List<Integer> ids) throws SQLException {
+		PreparedStatement psmt = null;
+		int count = 0;
+		try {
+			String statement = "";
+			int x = 0;
+			if (!ids.isEmpty())
+				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(ids, "id");
+
+			psmt = conn.prepareStatement(SELECT_ITEM + statement);
+
+			final ResultSet rs = psmt.executeQuery();
+
+			if (rs.next()) {
+				count = rs.getInt("c");
+			}
+		} finally {
+			if (psmt != null && !psmt.isClosed()) {
+				psmt.close();
+			}
+		}
+		return count;
 	}
 }

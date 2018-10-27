@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.shangho.blackcore.api.customerdemand.bean.CustomerDemandToHousePatternBean;
+import com.shangho.blackcore.api.customerdemand.bean.HousePatternNameBean;
 import com.shangho.dao.crm.utils.SQLFromatUtils;
 
 public class CustomerDemandToHousePatternDao {
@@ -84,6 +85,61 @@ public class CustomerDemandToHousePatternDao {
 			while (rs.next()) {
 				list.add(new CustomerDemandToHousePatternBean(rs.getInt("customer_demand_id"),
 						rs.getInt("house_pattern_item_id")));
+			}
+		} finally {
+			if (psmt != null && !psmt.isClosed()) {
+				psmt.close();
+			}
+		}
+		return list;
+	}
+
+	private final static String SELECT_CUSTOMER_ID = "SELECT DISTINCT customer_demand_id FROM "
+			+ "customer_demand_to_house_pattern ";
+
+	public List<Integer> listCustomerDemandID(final Connection conn, final List<Integer> housePatternItemIDs)
+			throws SQLException {
+		PreparedStatement psmt = null;
+		final List<Integer> list = new ArrayList<Integer>();
+		try {
+			String statement = "";
+			int x = 0;
+			if (!housePatternItemIDs.isEmpty())
+				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(housePatternItemIDs, "house_pattern_item_id");
+
+			psmt = conn.prepareStatement(SELECT_CUSTOMER_ID + statement);
+			final ResultSet rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				list.add(rs.getInt("customer_demand_id"));
+			}
+		} finally {
+			if (psmt != null && !psmt.isClosed()) {
+				psmt.close();
+			}
+		}
+		return list;
+	}
+
+	private final static String SELECT_ALL_BY_ID = "SELECT B.id,B.sort,B.name,B.status FROM "
+			+ "customer_demand_to_house_pattern A LEFT JOIN house_pattern_item B ON "
+			+ "A.house_pattern_item_id = B.id WHERE A.customer_demand_id = ?;";
+
+	public List<HousePatternNameBean> list(final Connection conn, final int customerDemandID) throws SQLException {
+		PreparedStatement psmt = null;
+		final List<HousePatternNameBean> list = new ArrayList<HousePatternNameBean>();
+		try {
+			psmt = conn.prepareStatement(SELECT_ALL_BY_ID);
+
+			int i = 0;
+			psmt.setInt(++i, customerDemandID);
+
+			final ResultSet rs = psmt.executeQuery();
+
+			while (rs.next()) {
+				list.add(new HousePatternNameBean(rs.getInt("id"), rs.getString("name"), rs.getString("status"),
+						rs.getInt("sort")));
 			}
 		} finally {
 			if (psmt != null && !psmt.isClosed()) {

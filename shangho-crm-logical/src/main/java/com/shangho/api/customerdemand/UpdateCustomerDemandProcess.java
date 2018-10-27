@@ -100,9 +100,12 @@ public class UpdateCustomerDemandProcess extends AbstractAPIProcess {
 		if (entity.getName().length() > 50) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(name length 50).");
 		}
-		if (!CustomerDemandManager.getInstance().checkUpdateInfo(entity.getId(), entity.getObjectcategoryid())) {
+		if (!CustomerDemandManager.getInstance().checkUpdateInfo(entity.getId(), entity.getObjectcategoryid(),
+				entity.getHousepatternitemids(), entity.getLocationitemids(), entity.getSpecialdemanditemids(),
+				entity.getDesignatepathids())) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT,
-					"Request is illegal(not found id or object category id).");
+					"Request is illegal(not found id, object category id,house pattern item id,location item id,"
+							+ "special demand item id,designate path id).");
 		}
 	}
 

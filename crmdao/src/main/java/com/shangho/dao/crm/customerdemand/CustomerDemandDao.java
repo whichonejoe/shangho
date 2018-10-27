@@ -10,7 +10,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.shangho.blackcore.api.object.response.ListObjectCategoryResponse;
+import com.shangho.blackcore.api.customerdemand.response.ListCustomerDemandResponse;
 import com.shangho.dao.crm.utils.SQLFromatUtils;
 
 public class CustomerDemandDao {
@@ -135,37 +135,66 @@ public class CustomerDemandDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT id,status,type,sort,name,description FROM customer_demand ";
+	private final static String SELECT = "SELECT id,object_category_id,status,name,budget_max,budget_minimum,"
+			+ "sq_max,sq_minimum,house_age_max,house_age_minimum FROM customer_demand ";
 
-	public List<ListObjectCategoryResponse> list(final Connection conn, final String status, final String type,
-			final List<String> names, final String sortOrderBy) throws SQLException {
+	public List<ListCustomerDemandResponse> list(final Connection conn, final String status, final int budgetmax,
+			final int budgetminimum, final int sqmax, final int sqminimum, final int houseagemax,
+			final int houseageminimum, final List<Integer> categories, final List<String> names,
+			final List<Integer> ids) throws SQLException {
 		PreparedStatement psmt = null;
-		final List<ListObjectCategoryResponse> list = new ArrayList<ListObjectCategoryResponse>();
+		final List<ListCustomerDemandResponse> list = new ArrayList<ListCustomerDemandResponse>();
 		try {
 			String statement = "";
 			int x = 0;
 			if (!names.isEmpty())
 				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
 						+ SQLFromatUtils.handleSQLLikeStatement(names, "name");
+			if (!categories.isEmpty())
+				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(categories, "object_category_id");
+			if (!ids.isEmpty())
+				statement = SQLFromatUtils.formatWhereDescription(x++, "", statement)
+						+ SQLFromatUtils.handleSQLLikeStatementWithInt(ids, "id");
 			if (!StringUtils.isBlank(status))
 				statement = SQLFromatUtils.formatWhereDescription(x++, " status=? ", statement);
-			if (!StringUtils.isBlank(type))
-				statement = SQLFromatUtils.formatWhereDescription(x++, " type=?", statement);
-			if (!StringUtils.isBlank(sortOrderBy))
-				statement += " ORDER BY sort " + sortOrderBy;
+			if (budgetmax > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " budget_max<=? ", statement);
+			if (budgetminimum > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " budget_minimum>=? ", statement);
+			if (sqmax > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " sq_max<=? ", statement);
+			if (sqminimum > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " sq_minimum>=? ", statement);
+			if (houseagemax > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " house_age_max<=? ", statement);
+			if (houseageminimum > 0)
+				statement = SQLFromatUtils.formatWhereDescription(x++, " house_age_minimum>=? ", statement);
+
 			psmt = conn.prepareStatement(SELECT + statement);
 
 			int i = 0;
 			if (!StringUtils.isBlank(status))
 				psmt.setString(++i, status);
-			if (!StringUtils.isBlank(type))
-				psmt.setString(++i, type);
+			if (budgetmax > 0)
+				psmt.setInt(++i, budgetmax);
+			if (budgetminimum > 0)
+				psmt.setInt(++i, budgetminimum);
+			if (sqmax > 0)
+				psmt.setInt(++i, sqmax);
+			if (sqminimum > 0)
+				psmt.setInt(++i, sqminimum);
+			if (houseagemax > 0)
+				psmt.setInt(++i, houseagemax);
+			if (houseageminimum > 0)
+				psmt.setInt(++i, houseageminimum);
 
 			final ResultSet rs = psmt.executeQuery();
-
 			while (rs.next()) {
-				list.add(new ListObjectCategoryResponse(rs.getInt("id"), rs.getString("status"), rs.getString("type"),
-						rs.getInt("sort"), rs.getString("name"), rs.getString("description")));
+				list.add(new ListCustomerDemandResponse(rs.getInt("id"), rs.getString("status"), rs.getString("name"),
+						rs.getInt("object_category_id"), rs.getInt("budget_max"), rs.getInt("budget_minimum"),
+						rs.getInt("sq_max"), rs.getInt("sq_minimum"), rs.getInt("house_age_max"),
+						rs.getInt("house_age_minimum")));
 			}
 		} finally {
 			if (psmt != null && !psmt.isClosed()) {
@@ -174,5 +203,4 @@ public class CustomerDemandDao {
 		}
 		return list;
 	}
-
 }

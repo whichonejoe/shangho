@@ -8,7 +8,6 @@ import com.shangho.blackcore.api.customerdemand.request.InsertCustomerDemandRequ
 import com.shangho.commom.StatusMean;
 import com.shangho.common.abs.AbstractAPIProcess;
 import com.shangho.dao.crm.manager.CustomerDemandManager;
-import com.shangho.dao.crm.manager.ObjectManager;
 import com.shangho.utils.exception.SHException;
 import com.shangho.utils.log.LogAction;
 import com.shangho.utils.status.APIStatus;
@@ -97,8 +96,12 @@ public class InsertCustomerDemandProcess extends AbstractAPIProcess {
 		if (entity.getName().length() > 50) {
 			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(name length 50).");
 		}
-		if (!ObjectManager.getInstance().isCategoryExisted(entity.getObjectcategoryid())) {
-			throw new SHException(APIStatus.ILLEGAL_ARGUMENT, "Request is illegal(not found object category id).");
+		if (!CustomerDemandManager.getInstance().checkInsertInfo(entity.getObjectcategoryid(),
+				entity.getHousepatternitemids(), entity.getLocationitemids(), entity.getSpecialdemanditemids(),
+				entity.getDesignatepathids())) {
+			throw new SHException(APIStatus.ILLEGAL_ARGUMENT,
+					"Request is illegal(not found object category id,house pattern item id,location item id,"
+							+ "special demand item id,designate path id).");
 		}
 	}
 
