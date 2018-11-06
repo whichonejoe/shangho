@@ -1,0 +1,6 @@
+127.0.0.1 - - [08/Oct/2018:21:25:21 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Oct/2018:21:25:29 +0800] "POST /shangho-blackcore/location/category/update HTTP/1.1" 200 84
+127.0.0.1 - - [08/Oct/2018:21:27:21 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Oct/2018:21:27:37 +0800] "POST /shangho-blackcore/location/category/list HTTP/1.1" 200 316
+127.0.0.1 - - [08/Oct/2018:21:30:29 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [08/Oct/2018:21:31:18 +0800] "POST /shangho-blackcore/location/category/list HTTP/1.1" 200 53

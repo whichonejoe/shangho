@@ -1,0 +1,15 @@
+1540295956472	Rename package 'com.shangho.api.housepattern'
+1540296018719	Delete elements
+1540296102552	Rename type 'DeleteHousePatternCategoryProcess'
+1540298104914	Rename type 'DeleteCustomerDemandProcess'
+1540298128982	Rename package 'com.shangho.api.customerdemand'
+1540298216533	Copy compilation unit
+1540298270589	Copy compilation unit
+1540298437754	Copy compilation unit
+1540298578672	Copy compilation unit
+1540381640789	Copy package
+1540381652375	Delete elements
+1540381676645	Rename compilation unit 'DeleteLocationCategoryProcess.java'
+1540381681637	Rename type 'InsertLocationCategoryProcess'
+1540381686216	Rename type 'ListLocationCategoryProcess'
+1540381690692	Rename type 'UpdateLocationCategoryProcess'

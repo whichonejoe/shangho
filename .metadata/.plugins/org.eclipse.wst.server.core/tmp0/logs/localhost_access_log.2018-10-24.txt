@@ -1,0 +1,17 @@
+127.0.0.1 - - [24/Oct/2018:20:49:35 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [24/Oct/2018:20:49:45 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 36
+127.0.0.1 - - [24/Oct/2018:20:50:19 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [24/Oct/2018:20:50:29 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 36
+127.0.0.1 - - [24/Oct/2018:20:51:07 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [24/Oct/2018:20:51:12 +0800] "POST /shangho-blackcore/location/category/update HTTP/1.1" 200 84
+127.0.0.1 - - [24/Oct/2018:20:51:12 +0800] "POST /shangho-blackcore/location/category/list HTTP/1.1" 200 478
+127.0.0.1 - - [24/Oct/2018:20:51:12 +0800] "POST /shangho-blackcore/location/category/insert HTTP/1.1" 200 73
+127.0.0.1 - - [24/Oct/2018:20:51:12 +0800] "POST /shangho-blackcore/location/category/update HTTP/1.1" 200 71
+127.0.0.1 - - [24/Oct/2018:20:51:12 +0800] "POST /shangho-blackcore/location/category/delete HTTP/1.1" 200 53
+127.0.0.1 - - [24/Oct/2018:20:51:48 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [24/Oct/2018:20:51:53 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 86
+127.0.0.1 - - [24/Oct/2018:21:26:31 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 86
+127.0.0.1 - - [24/Oct/2018:21:26:54 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 86
+127.0.0.1 - - [24/Oct/2018:21:27:16 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 112
+127.0.0.1 - - [24/Oct/2018:21:30:16 +0800] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [24/Oct/2018:21:30:23 +0800] "POST /shangho-blackcore/customerdemand/insert HTTP/1.1" 200 62

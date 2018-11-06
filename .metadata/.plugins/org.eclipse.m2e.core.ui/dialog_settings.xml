@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\workspace\blackcore"/>
+			<item value="E:\svn\ipos-web-sdk"/>
+			<item value="E:\svn\ipos-web-common-framework"/>
+			<item value="E:\svn\ipos-web"/>
+			<item value="E:\svn"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\workspace"/>
+			<item value="E:\workspace\testa"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="shangho_api.api_test"/>
+			<item value="shangho_api.shangho_test"/>
+			<item value="shangho_api.crmdao"/>
+			<item value="shangho_blackcore.shangho_configuration"/>
+			<item value="shangho_blackcore.blackcore"/>
+			<item value="shangho.shangho"/>
+			<item value="shangho_blackcore.shangho_blackcore"/>
+			<item value="shangho.shangho_api_module"/>
+		</list>
+		<list key="groupId">
+			<item value="shangho-api"/>
+			<item value="shangho-blackcore"/>
+			<item value="shangho"/>
+		</list>
+		<list key="artifactId">
+			<item value="api-test"/>
+			<item value="shangho-test"/>
+			<item value="crmdao"/>
+			<item value="shangho-configuration"/>
+			<item value="blackcore"/>
+			<item value="shangho-utils"/>
+			<item value="shangho-common-framework"/>
+			<item value="shangho-crm-logical"/>
+			<item value="shangho-blackcore"/>
+			<item value="shangho-api-module"/>
+			<item value="shangho"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="1.0.0"/>
+			<item value="1.0.0.0"/>
+			<item value="0.0.0"/>
+			<item value="0.0.1-SNAPSHOT"/>
+			<item value="0.0.1"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,22 @@
+1539606755971	Copy package
+1539606764429	Delete elements
+1539606808821	Rename compilation unit 'DeleteLocationCategoryProcess.java'
+1539606818237	Rename type 'InsertLocationCategoryProcess'
+1539606822869	Rename type 'ListLocationCategoryProcess'
+1539606827695	Rename type 'UpdateLocationCategoryProcess'
+1539606996846	Copy compilation unit
+1539608524935	Rename type 'SQLSortInt'
+1539608529934	Rename type 'SQLSatementInt'
+1539608534681	Rename type 'SQLSatementInf'
+1539694515157	Copy compilation units
+1539694546630	Rename type 'DeleteObjectCategoryProcess2'
+1539694552350	Rename type 'InsertObjectCategoryProcess2'
+1539694557919	Rename type 'ListObjectCategoryProcess2'
+1539694564155	Rename type 'UpdateObjectCategoryProcess2'
+1540004460643	Copy compilation units
+1540008493995	Move compilation units
+1540008608394	Copy compilation units
+1540008619945	Rename type 'DeleteSpecialDemandItemProcess'
+1540008626482	Rename type 'InsertSpecialDemandItemProcess'
+1540008632425	Rename type 'ListSpecialDemandItemProcess'
+1540008638160	Rename type 'UpdateSpecialDemandItemProcess'

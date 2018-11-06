@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.gargula.ipos.abs.AbstractAuthLogical"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.gargula.ipos.web.httpclient.AbsHttpClient"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Document"/>
+<fullyQualifiedTypeName name="org.jsoup.nodes.Element"/>
+<fullyQualifiedTypeName name="net.sourceforge.tess4j.ITesseract"/>
+<fullyQualifiedTypeName name="net.sourceforge.tess4j.util.LoadLibs"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.apache.commons.io.IOUtils"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.shangho.common.abs.AbstractAPIProcess"/>
+<fullyQualifiedTypeName name="com.shangho.utils.log.LogAction"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.location.LocationCategoryDao"/>
+<fullyQualifiedTypeName name="com.shangho.blackcore.api.parser.APIServlet"/>
+<fullyQualifiedTypeName name="org.slf4j.Logger"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.manager.LocationManager"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
+<fullyQualifiedTypeName name="com.shangho.blackcore.api.location.request.ListLocationItemRequest"/>
+<fullyQualifiedTypeName name="com.shangho.api.location.ListLocationItemProcess"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.object.ObjectCategoryDao"/>
+<fullyQualifiedTypeName name="com.shangho.commom.SQLSatementIntf"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.customerdemand.CustomerDemandDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.customerdemand.CustomerDemandToDesignatePathDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.manager.ObjectManager"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.manager.HousePatternManager"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.location.LocationRangeItemDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.specialdemand.SpecialDemandItemDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.designatepath.DesignatePathDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.customerdemand.CustomerDemandToLocationDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.customerdemand.CustomerDemandToHousePatternDao"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.customerdemand.CustomerDemandToSpecialDemandDao"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.manager.CustomerDemandManager"/>
+<fullyQualifiedTypeName name="com.shangho.blackcore.api.customerdemand.bean.ListCustomerDemandRequest"/>
+<fullyQualifiedTypeName name="com.shangho.dao.crm.housepattern.HousePatternItemDao"/>
+</qualifiedTypeNameHistroy>

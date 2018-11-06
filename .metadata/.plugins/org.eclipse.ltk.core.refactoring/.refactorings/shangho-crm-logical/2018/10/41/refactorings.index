@@ -1,0 +1,11 @@
+1539004252987	Copy compilation unit
+1539087022966	Copy compilation unit
+1539397578564	Copy package
+1539397606969	Rename type 'DeleteLocationCategoryProcess'
+1539397613989	Rename type 'DeleteLocationItemProcess'
+1539397619144	Rename type 'InsertLocationCategoryProcess'
+1539397627644	Rename type 'InsertLocationItemProcess'
+1539397632501	Rename type 'ListLocationCategoryProcess'
+1539397638126	Rename type 'UpdateLocationCategoryProcess'
+1539397646310	Rename type 'UpdateLocationItemProcess'
+1539398198217	Rename compilation unit 'ListLocationItemProcess.java'

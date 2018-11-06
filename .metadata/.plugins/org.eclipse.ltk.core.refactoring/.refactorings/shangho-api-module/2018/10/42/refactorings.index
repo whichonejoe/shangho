@@ -1,0 +1,36 @@
+1539604834249	Copy package
+1539604858257	Copy package
+1539604909764	Rename type 'InsertSpecialDemandCategoryRequest'
+1539604916462	Delete elements
+1539604927716	Rename type 'DeleteSpecialDemandCategoryRequest'
+1539604936467	Rename type 'ListSpecialDemandCategoryRequest'
+1539604942494	Rename type 'UpdateSpecialDemandCategoryRequest'
+1539605641157	Delete element
+1539606078881	Rename package 'com.shangho.blackcore.api.objectcategory.response'
+1539606092982	Rename package 'com.shangho.blackcore.api.objectcategory.request'
+1539606615015	Rename type 'ListLocationCategoryResponse'
+1539611756506	Copy package
+1539611768573	Copy package
+1539611790997	Rename type 'DeleteObjectCategoryRequest'
+1539611808533	Rename type 'InsertObjectCategoryRequest'
+1539611813938	Rename type 'ListObjectCategoryRequest'
+1539611819625	Rename type 'UpdateObjectCategoryRequest'
+1539690816965	Copy package
+1539690889386	Rename type 'InsertHousePatternRequest'
+1539690968445	Rename type 'DeleteHousePatternRequest'
+1539690972920	Rename type 'ListHousePatternRequest'
+1539690991904	Rename type 'UpdateHousePatternRequest'
+1539692174956	Copy package
+1539692182151	Copy compilation unit
+1539692195031	Delete elements
+1539692205686	Rename type 'ListObjectCategoryResponse'
+1540003402537	Rename type 'ListObjectCategoryResponse'
+1540004256327	Rename type 'DeleteHousePatternRequest'
+1540004259534	Rename type 'InsertHousePatternRequest'
+1540004262692	Rename type 'ListHousePatternRequest'
+1540004266238	Rename type 'UpdateHousePatternRequest'
+1540004270683	Rename type 'ListHousePatternResponse'
+1540006041282	Copy compilation units
+1540007250056	Copy compilation unit
+1540007260175	Move compilation unit
+1540007273237	Rename type 'ListSpecialDemandItemResponse'

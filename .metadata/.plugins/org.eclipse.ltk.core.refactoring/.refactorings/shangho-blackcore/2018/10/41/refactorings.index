@@ -1,0 +1,13 @@
+1539004389045	Copy compilation unit
+1539087712383	Copy compilation unit
+1539087720352	Rename type 'ListLoactionIItemServlet'
+1539398307519	Copy package
+1539398335248	Rename package 'com.shangho.blackcore.servlet.location.copy'
+1539398355053	Rename type 'DeleteLoactionCategoryServlet'
+1539398360043	Rename type 'DeleteLoactionItemServlet'
+1539398365152	Rename type 'InsertLoactionCategoryServlet'
+1539398370774	Rename type 'InsertLoactionItemServlet'
+1539398375602	Rename type 'ListLoactionCategoryServlet'
+1539398381272	Rename type 'ListLoactionItemServlet'
+1539398386734	Rename type 'UpdateLoactionCategoryServlet'
+1539398395108	Rename type 'UpdateLoactionItemServlet'

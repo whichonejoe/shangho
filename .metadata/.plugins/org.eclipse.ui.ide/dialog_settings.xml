@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="382" key="DIALOG_HEIGHT"/>
+		<item value="110" key="DIALOG_Y_ORIGIN"/>
+		<item value="433" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+		<item value="380" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="false" key="FilterByLocation"/>
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Servers/Tomcat v8.0 Server at localhost-config/web.xml&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/WebContent/WEB-INF/web.xml&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/blackcore/initial/proxool/proxool.xml&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/src/main/java/com/shangho/blackcore/servlet/location/InsertLoactionCategoryServlet.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/src/main/java/com/shangho/blackcore/servlet/location/DeleteLoactionCategoryServlet.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/location/LocationRangeCategoryDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/src/main/java/com/shangho/blackcore/servlet/specialdemand/DeleteSpecialDemandItemServlet.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/manager/LocationManager.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/object/request/ListObjectCategoryRequest.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/location/request/ListLocationCategoryRequest.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-crm-logical/src/main/java/com/shangho/api/object/UpdateObjectCategoryProcess.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/designatepath/request/ListDesignatePathRequest.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-blackcore/src/main/java/com/shangho/blackcore/listener/SystemInitialListener.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-crm-logical/src/main/java/com/shangho/api/specialdemand/ListSpecialDemandItemProcess.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/manager/ObjectManager.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/manager/SpecialDemandManager.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/customerdemand/request/InsertCustomerDemandRequest.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/specialdemand/SpecialDemandItemDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/manager/CustomerDemandManager.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/customerdemand/CustomerDemandDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/customerdemand/bean/CustomerDemandToDesignatePathBean.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/location/LocationRangeItemDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/customerdemand/CustomerDemandToDesignatePathDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/designatepath/DesignatePathDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/customerdemand/CustomerDemandToHousePatternDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/shangho-api-module/src/main/java/com/shangho/blackcore/api/housepattern/response/ListHousePatternItemResponse.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/customerdemand/CustomerDemandToLocationDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/crmdao/src/main/java/com/shangho/dao/crm/customerdemand/CustomerDemandToSpecialDemandDao.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/api-test/src/main/java/com/shangho/test/location/LoactionCategoryTest.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="493" key="DIALOG_WIDTH"/>
+			<item value="1|Microsoft JhengHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft JhengHei UI" key="DIALOG_FONT_NAME"/>
+			<item value="523" key="DIALOG_HEIGHT"/>
+			<item value="202" key="DIALOG_Y_ORIGIN"/>
+			<item value="373" key="DIALOG_X_ORIGIN"/>
+		</section>
+	</section>
+</section>
