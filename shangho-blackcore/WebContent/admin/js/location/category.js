@@ -39,18 +39,48 @@ function showDataList(){
     });
 }
 function setBindMain(){
+	// $("#main-content").unbind("click.add");
+ //    $("#main-content").on("click.add", "#add", function(event){ 
+ //    	var id = $(this).attr('value');
+ //    	var OBJ = {
+	// 		content : {
+	// 			token : 'token',
+	// 			id : id,
+	// 			name : $('#name_' + id).text(),
+	// 			status :'0',
+	// 			description : $('#description_' + id).text()
+	// 		}
+	// 	}
+	// 	doStatusSubmit(OBJ,id);
+ //    });
 	$("#table_list").unbind("click.turnoff");
     $("#table_list").on("click.turnoff", ".turnoff", function(event){ 
-    	console.log($(this));
     	var id = $(this).attr('value');
-    	var name = $('#name_' + id).text();
-    	$('#name_' + id).attr('style','display:none');
-        $('#name_modify_' + id).html('<input name="input_name_'+ id +'" value="'+ description +'"/>');
+    	var OBJ = {
+			content : {
+				token : 'token',
+				id : id,
+				name : $('#name_' + id).text(),
+				status :'0',
+				description : $('#description_' + id).text()
+			}
+		}
+		doStatusSubmit(OBJ,id);
     });
 
     $("#table_list").unbind("click.turnon");
     $("#table_list").on("click.turnon", ".turnon", function(event){ 
-    
+    	var id = $(this).attr('value');
+    	var OBJ = {
+			content : {
+				token : 'token',
+				id : id,
+				name : $('#name_' + id).text(),
+				status :'1',
+				description : $('#description_' + id).text()
+			}
+		}
+		doStatusSubmit(OBJ,id);
     });
 
     //修改
@@ -69,7 +99,7 @@ function setBindMain(){
         $('#check_' + id).attr('style','display');
         $('#delete_' + id).attr('style','display:none');
         $('#turnoff_' + id).attr('style','display:none');
-        $('#turnoff_' + id).attr('style','display:none');
+        $('#turnon_' + id).attr('style','display:none');
     });
 
     //修改
@@ -91,6 +121,7 @@ function setBindMain(){
     //刪除
     $("#table_list").unbind("click.delete");
     $("#table_list").on("click.delete", ".delete", function(event){ 
+    	var id = $(this).attr('value');
     	if(confirm("確認要刪除?")){
     		var OBJ = {
     			content : {
@@ -102,9 +133,32 @@ function setBindMain(){
     	}
     });
 }
+function setBindAdd(){
+    //submit
+	$("#main-content").unbind("click.add_submit");
+	$("#main-content").on("click.add_submit", "#add_submit", function(event){ 
+		if($("#myform").valid()){
+			var OBJ = {
+				content : {
+					token : 'token',
+					name : $('#name').val(),
+					status :$('#status').val(),
+					description : $('#description').val()
+				}
+			}
+			doInsertSubmit(OBJ);
+		}else{
+			var nameOBJ = $('#name');
+			if(nameOBJ.val().length<=0){
+				nameOBJ.parent('div').parent('div').addClass('has-error')
+			}
+		}
+    });
+}
 function setRouter(){
 	var routes = {		
-		'':showMainContent()
+		'':showMainContent(),
+		'add': showAdd
 	};
 
 	var router = Router(routes)
@@ -126,6 +180,12 @@ function buildTemplateMultipleHtml(tpl_code,_obj,pageId){
 	var obj = _obj;
 	var html = tpl_bin(obj);
 	$('#' + pageId).html(html);
+}
+function showAdd(){
+	$('#main-content').empty();
+	buildTemplate('tpl_page_add',null,'main-content');
+	setBindAdd();
+	$("#myform").validate();
 }
 function doListSubmit(_data){
 	var data = null;
@@ -161,7 +221,7 @@ function doUpdateSubmit(_data,_ID){
 		success: function(obj){			
 			if(obj.status==0){
 				console.log(obj);
-				handleUpdateSuccess(_ID);
+				handleUpdateSuccess(_ID,_data.content.status);
 			}else{
 				alert(obj.message)
 				console.log(obj.message);
@@ -179,14 +239,61 @@ function doDeleteSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/delte',
+		url: $.serverurl + '/location/category/delete',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
 				console.log(obj);
+				handleDeleteSuccess(_data.content.id);
 			}else{
 				alert(obj.message)
 				console.log(obj.message);	
+			}
+		},
+		failure: function(errMsg) {
+			data = null;
+			alert(errMsg);			
+		},
+		contentType: "application/json; charset=utf-8",
+		dataType: "json"
+	});
+}
+function doStatusSubmit(_data){
+	$.ajax({
+		type: "POST",
+		async: false,
+		url: $.serverurl + '/location/category/update',
+		data: JSON.stringify(_data),
+		success: function(obj){			
+			if(obj.status==0){
+				handleUpdateStatusSuccess(_data.content.id,_data.content.status);
+			}else{
+				alert(obj.message)
+				console.log(obj.message);
+			}
+		},
+		failure: function(errMsg) {
+			data = null;
+			alert(errMsg);			
+		},
+		contentType: "application/json; charset=utf-8",
+		dataType: "json"
+	});
+}
+function doInsertSubmit(_data){
+	$.ajax({
+		type: "POST",
+		async: false,
+		url: $.serverurl + '/location/category/insert',
+		data: JSON.stringify(_data),
+		success: function(obj){			
+			if(obj.status==0){
+				console.log(obj);
+				window.history.replaceState(null,null,'#');
+				showMainContent();
+			}else{
+				alert(obj.message)
+				console.log(obj.message);
 			}
 		},
 		failure: function(errMsg) {
@@ -240,7 +347,7 @@ function handleRefreshToken(callback){
 		}
 	}
 }
-function handleUpdateSuccess(_ID){
+function handleUpdateSuccess(_ID,_status){
 	var description = $('input[name=input_description_' + _ID +']').val();
 	var name = $('input[name=input_name_' + _ID +']').val();
 	$('#description_' + _ID).text(description);
@@ -253,35 +360,18 @@ function handleUpdateSuccess(_ID){
     $('#edit_' + _ID).attr('style','display');
     $('#check_' + _ID).attr('style','display:none');
     $('#delete_' + _ID).attr('style','display');
-    $('#turnoff_' + _ID).attr('style','display');
-    $('#turnoff_' + _ID).attr('style','display');
+    handleUpdateStatusSuccess(_ID,_status);
 }
-function doSubmit(data){
-	$.ajax({
-		type: "POST",
-		async: false,
-		url: $.serverurl + '/log/setting/update',
-		data: JSON.stringify(data),
-		success: function(obj){
-			if(obj.status==0){			
-				window.history.replaceState(null,null,'#');
-				showMainContent();
-			}else if(obj.status==2001){
-				handleRefreshToken();
-				data.token = token;
-				doSubmit(data);
-			}else{
-				window.localStorage.removeItem('hmitoken');
-				alert("fail("+obj.message+").");
-				handleCheckLogin();
-			}
-		},
-		failure: function(errMsg) {
-			data = null;
-			alert(errMsg);
-		},
-		contentType: "application/json; charset=utf-8",
-		dataType: "json"
-	});
+function handleUpdateStatusSuccess(_ID,_status){
+	if(_status=="1"){
+		$('#turnoff_'+_ID).attr('style','display');
+		$('#turnon_'+_ID).attr('style','display:none');
+	}else if(_status=="0"){
+		$('#turnoff_'+_ID).attr('style','display:none');
+		$('#turnon_'+_ID).attr('style','display');
+	}
+	$('#status_'+_ID).val(_status);
 }
-
+function handleDeleteSuccess(_ID){
+	$('#delete_'+_ID).parent('td').parent('tr').empty()
+}

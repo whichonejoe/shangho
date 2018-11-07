@@ -192,7 +192,7 @@ public class LocationRangeItemDao {
 	}
 
 	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,A.id,"
-			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM location_range_item C "
+			+ "A.location_range_category_id,A.refer_id,CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM location_range_item C "
 			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM location_range_item A "
 			+ "LEFT JOIN location_range_category B ON A.location_range_category_id = B.id ";
 
@@ -224,9 +224,9 @@ public class LocationRangeItemDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListLocationItemResponse(rs.getInt("id"), rs.getString("category_name"),
-						rs.getString("refer_name"), rs.getString("status"), rs.getString("name"),
-						rs.getString("description")));
+				list.add(new ListLocationItemResponse(rs.getInt("id"), rs.getInt("location_range_category_id"),
+						rs.getString("category_name"), rs.getInt("refer_id"), rs.getString("refer_name"),
+						rs.getString("status"), rs.getString("name"), rs.getString("description")));
 			}
 
 		} finally {

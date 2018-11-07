@@ -1,9 +1,9 @@
 #Tomcat publish data
-#Mon Nov 05 14:57:20 CST 2018
+#Wed Nov 07 21:22:41 CST 2018
 org.eclipse.jst.j2ee.server\:shangho-configuration=WEB-INF/lib/shangho-configuration.jar
 org.eclipse.jst.j2ee.server\:shangho-crm-logical=WEB-INF/lib/shangho-crm-logical.jar
 org.eclipse.jst.j2ee.server\:crmdao=WEB-INF/lib/crmdao.jar
-org.eclipse.jst.j2ee.server\:shangho-common-framework=WEB-INF/lib/shangho-common-framework.jar
 org.eclipse.jst.j2ee.server\:shangho-utils=WEB-INF/lib/shangho-utils.jar
+org.eclipse.jst.j2ee.server\:shangho-common-framework=WEB-INF/lib/shangho-common-framework.jar
 org.eclipse.jst.j2ee.server\:shangho-api-module=WEB-INF/lib/shangho-api-module.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\joe\\.m2\\repository\\org\\apache\\tomcat\\tomcat-websocket\\8.0.39\\tomcat-websocket-8.0.39.jar=WEB-INF/lib/tomcat-websocket-8.0.39.jar

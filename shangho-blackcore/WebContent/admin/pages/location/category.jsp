@@ -38,8 +38,10 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <!-- <h3 class="box-title"></h3> -->          
+              <!-- <h3 class="box-title"></h3> -->         
+              <a class="btn btn-success" href="#add"><i class="fa fa-plus"></i></a>
               <div class="box-tools">
+                
                 <div class="input-group input-group-sm" style="width: 150px;">              
                 </div>
               </div>
@@ -60,7 +62,7 @@
         <thead>
           <tr>
             <th>名稱</th>
-            <th></th>
+            <th>敘述</th>
             <th></th>
           </tr>
         </thead>
@@ -74,18 +76,14 @@
               <td>
                   <div id="description_{{id}}">{{description}}</div>
                   <div id="description_modify_{{id}}"></div>
-                 
               </td>
               <td>
-                {{#ifCond status 1}}
-                  <a href="javascript:void(0)" class="turnoff" id="turnoff_{{id}}" value="{{id}}" title="停用">
-                    <i class="fa fa-fw fa-pause"></i>
-                  </a>
-                {{else}}
-                  <a href="javascript:void(0)" class="turnon" id="turnoff_{{id}}" value="{{id}}" title="啟用">
-                    <i class="fa fa-fw fa-play"></i>
-                  </a>
-                {{/ifCond}}
+                <a href="javascript:void(0)" class="turnoff" id="turnoff_{{id}}" value="{{id}}" title="停用" {{#ifCond status 0}}style="display:none"{{/ifCond}}>
+                  <i class="fa fa-fw fa-pause"></i>
+                </a>             
+                <a href="javascript:void(0)" class="turnon" id="turnon_{{id}}" value="{{id}}" title="啟用" {{#ifCond status 1}}style="display:none"{{/ifCond}}>
+                  <i class="fa fa-fw fa-play"></i>
+                </a>                
                 <a href="javascript:void(0)" class="edit" id="edit_{{id}}" value="{{id}}" title="編輯">
                   <i class="fa fa-fw fa-edit"></i>
                 </a>
@@ -102,6 +100,47 @@
         </tbody>
       </table>
    </script>
+   <script type="text/template" id="tpl_page_add">
+      
+      <div class="box box-info">
+         <div class="box-header with-border">
+            <h3 class="box-title">新增</h3>
+         </div>
+         <!-- /.box-header -->
+         <!-- form start -->
+         <form class="form-horizontal" id="myform">
+            <div class="box-body">
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="name" placeholder="Name" maxlength="50" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">狀態</label>
+                <div class="col-sm-5">
+                  <select class="form-control" id="status">
+                    <option value="1">啟用</option>
+                    <option value="0">停用</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-7">
+                  <input type="text" class="form-control" id="description" placeholder="Description" maxlength="500"/>
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+               <button type="submit" id="add_submit" class="btn btn-info">送出</button>
+            </div>
+            <!-- /.box-footer -->
+         </form>
+      </div>
+    </script>
    <%@include file="/admin/pages/include/initial_script.jsp" %> 
-   <script src="<%=request.getContextPath() %>/admin/js/location/category.js?updated=CCo"></script>
+   <script src="<%=request.getContextPath() %>/admin/plugins/jquery-validate/jquery.validate.min.js"></script>
+   <script src="<%=request.getContextPath() %>/admin/js/location/category.js?updated=Ajijijie"></script>
 </html>

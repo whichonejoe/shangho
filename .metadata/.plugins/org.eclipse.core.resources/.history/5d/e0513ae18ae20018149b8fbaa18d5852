@@ -1,0 +1,14 @@
+package com.shangho.blackcore.api.location.response;
+
+public class ListLocationItemResponse implements java.io.Serializable {
+	private static final long serialVersionUID = -4553237116178937153L;
+	private int id;
+	private int categoryid;
+	private String categoryname;
+	private int referid;
+	private String refername;
+	private String status;
+	private String name;
+	private String description;
+
+}

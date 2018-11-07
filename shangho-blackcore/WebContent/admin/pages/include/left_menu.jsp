@@ -52,5 +52,10 @@
          <i class="fa fa-file-code-o"></i> <span>指名區域</span>
          </a>
       </li>
+      <li>
+         <a href="<%=request.getContextPath() %>/admin/pages/location/item.jsp">
+         <i class="fa fa-file-code-o"></i> <span>指名區域-項目</span>
+         </a>
+      </li>
    </ul>
 </section>
