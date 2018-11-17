@@ -49,20 +49,6 @@ function filterColumn ( i,_value ) {
     ).draw();
 }
 function setBindMain(){
-	// $("#main-content").unbind("click.add");
- //    $("#main-content").on("click.add", "#add", function(event){ 
- //    	var id = $(this).attr('value');
- //    	var OBJ = {
-	// 		content : {
-	// 			token : 'token',
-	// 			id : id,
-	// 			name : $('#name_' + id).text(),
-	// 			status :'0',
-	// 			description : $('#description_' + id).text()
-	// 		}
-	// 	}
-	// 	doStatusSubmit(OBJ,id);
- //    });
 	$("#table_list").unbind("click.turnoff");
     $("#table_list").on("click.turnoff", ".turnoff", function(event){ 
     	var id = $(this).attr('value');
@@ -71,8 +57,8 @@ function setBindMain(){
 				token : 'token',
 				id : id,
 				name : $('#name_' + id).text(),
-				status :'0',
-				description : $('#description_' + id).text()
+				sort : $('#sort_' + id).val(),
+				status :'0'				
 			}
 		}
 		doStatusSubmit(OBJ,id);
@@ -86,8 +72,8 @@ function setBindMain(){
 				token : 'token',
 				id : id,
 				name : $('#name_' + id).text(),
-				status :'1',
-				description : $('#description_' + id).text()
+				sort : $('#sort_' + id).val(),
+				status :'1'
 			}
 		}
 		doStatusSubmit(OBJ,id);
@@ -99,12 +85,10 @@ function setBindMain(){
        	console.log($(this));
     	var id = $(this).attr('value');
     	var name = $('#name_' + id).text();
-    	var description = $('#description_' + id).text();
+    	
     	$('#name_' + id).attr('style','display:none');
         $('#name_modify_' + id).html('<input name="input_name_'+ id +'" value="'+ name +'"/>');
-        $('#description_' + id).attr('style','display:none');
-        $('#description_modify_' + id).html('<input name="input_description_'+ id +'" value="'+ description +'"/>');
-
+        
         $('#edit_' + id).attr('style','display:none');
         $('#check_' + id).attr('style','display');
         $('#delete_' + id).attr('style','display:none');
@@ -121,8 +105,8 @@ function setBindMain(){
 				token : 'token',
 				id : id,
 				name : $('input[name=input_name_'+ id +']').val(),
-				status : $('#status_'+ id).val(),
-				description : $('input[name=input_description_'+ id +']').val()
+				sort : $('#sort_' + id).val(),
+				status : $('#status_'+ id).val()
 			}
 		}
 		doUpdateSubmit(OBJ,id);    	
@@ -163,8 +147,7 @@ function setBindAdd(){
 				content : {
 					token : 'token',
 					name : $('#name').val(),
-					status :$('#status').val(),
-					description : $('#description').val()
+					status :$('#status').val()
 				}
 			}
 			doInsertSubmit(OBJ);
@@ -213,7 +196,7 @@ function doListSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/list',
+		url: $.serverurl + '/housepattern/category/list',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -237,7 +220,7 @@ function doUpdateSubmit(_data,_ID){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/housepattern/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -260,7 +243,7 @@ function doDeleteSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/delete',
+		url: $.serverurl + '/housepattern/category/delete',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -283,7 +266,7 @@ function doStatusSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/housepattern/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -305,7 +288,7 @@ function doInsertSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/insert',
+		url: $.serverurl + '/housepattern/category/insert',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -369,14 +352,10 @@ function handleRefreshToken(callback){
 	}
 }
 function handleUpdateSuccess(_ID,_status){
-	var description = $('input[name=input_description_' + _ID +']').val();
 	var name = $('input[name=input_name_' + _ID +']').val();
-	$('#description_' + _ID).text(description);
 	$('#name_' + _ID).text(name);
 	$('#name_' + _ID).attr('style','display');
     $('#name_modify_' + _ID).html('');
-    $('#description_' + _ID).attr('style','display');
-    $('#description_modify_' + _ID).html('');
 
     $('#edit_' + _ID).attr('style','display');
     $('#check_' + _ID).attr('style','display:none');

@@ -17,7 +17,7 @@
          <div class="content-wrapper">
             <section class="content-header">
                <h1>
-                  接受商圈 - 項目管理
+                  指名區域 - 項目管理
                </h1>
             </section>
             <!-- Main content -->
@@ -66,27 +66,47 @@
          </div>         
          <div class="box-body">
             <form class="form-horizontal" id="myform">
-            <div class="form-group">
-               <label for="inputEmail3" class="col-sm-2 control-label">名稱</label>
-               <div class="col-sm-5">
-                  <input type="text" class="form-control column_filter" count="0" id="name_search" placeholder="名稱" maxlength="50" />
-               </div>
-            </div>
-            <div class="form-group">
-               <label for="inputPassword3" class="col-sm-2 control-label">分類</label>
-               <div class="col-sm-5">
-                  <input type="text" class="form-control column_filter" count="1" id="category_search" placeholder="分類" maxlength="50" />
-               </div>
-            </div>
+              <div class="form-group">
+                 <label class="col-sm-2 control-label">縣市</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="0" id="city_search" placeholder="縣市" maxlength="50" />
+                 </div>
+              </div>
+              <div class="form-group">
+                 <label class="col-sm-2 control-label">鄉鎮區</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="1" id="township_search" placeholder="鄉鎮區" maxlength="50" />
+                 </div>
+              </div>
+              <div class="form-group">
+                 <label class="col-sm-2 control-label">鄰里</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="2" id="village_search" placeholder="鄰里" maxlength="50" />
+                 </div>
+              </div>
+              <div class="form-group">
+                 <label class="col-sm-2 control-label">街道</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="3" id="street_search" placeholder="街道" maxlength="50" />
+                 </div>
+              </div>
+              <div class="form-group">
+                 <label class="col-sm-2 control-label">名稱</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="4" id="name_search" placeholder="名稱" maxlength="50" />
+                 </div>
+              </div>
             </form>
          </div>
       </div>
       <table id="data-table" class="table table-bordered table-hover">
         <thead>
           <tr>
+            <th>縣市</th>
+            <th>鄉鎮區</th>
+            <th>鄰里</th>
+            <th>街道</th>
             <th>名稱</th>
-            <th>分類</th>
-            <th>敘述</th>
             <th></th>
           </tr>
         </thead>
@@ -94,17 +114,24 @@
           {{#each arr}}
             <tr>
               <td>
+                  <div id="city_{{id}}">{{city}}</div>
+                  <div id="city_modify_{{id}}"></div>
+              </td>
+              <td>
+                  <div id="township_{{id}}">{{township}}</div>
+                  <div id="township_modify_{{id}}"></div>
+              </td>
+              <td>
+                  <div id="village_{{id}}">{{village}}</div>
+                  <div id="village_modify_{{id}}"></div>
+              </td>
+               <td>
+                  <div id="street_{{id}}">{{street}}</div>
+                  <div id="street_modify_{{id}}"></div>
+              </td>
+              <td>
                   <div id="name_{{id}}">{{name}}</div>
                   <div id="name_modify_{{id}}"></div>
-              </td>
-              <td>
-                  <div id="category_name_{{id}}">{{categoryname}}</div>
-                  <input type="hidden" id="category_id_{{id}}" value="{{categoryid}}" />
-                  <div id="category_name_modify_{{id}}"></div>
-              </td>
-              <td>
-                  <div id="description_{{id}}">{{description}}</div>
-                  <div id="description_modify_{{id}}"></div>
               </td>
               <td>
                 <a href="javascript:void(0)" class="turnoff" id="turnoff_{{id}}" value="{{id}}" title="停用" {{#ifCond status 0}}style="display:none"{{/ifCond}}>
@@ -127,6 +154,9 @@
             </tr> 
           {{/each}}
         </tbody>
+        <tfoot>
+          <div class="my-selector-b" ></div>
+        </tfoot>
       </table>
    </script>
    <script type="text/template" id="tpl_page_add">
@@ -137,19 +167,35 @@
          <form class="form-horizontal" id="myform">
             <div class="box-body">
               <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">名稱</label>
+                <label for="name" class="col-sm-2 control-label">縣市</label>
                 <div class="col-sm-5">
-                  <input type="text" class="form-control" id="name" placeholder="Name" maxlength="50" required/>
+                  <div class="my-selector-b" id="select-city"></div>
+                  <!-- <input type="text" class="form-control" id="city" placeholder="縣市" maxlength="50" /> -->
                 </div>
               </div>
               <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">分類</label>
+                <label for="name" class="col-sm-2 control-label">鄉鎮區</label>
                 <div class="col-sm-5">
-                  <select class="form-control" id="category_id">
-                    {{#each arr}}
-                      <option value="{{id}}">{{name}}</option>
-                    {{/each}}
-                  </select>
+                  <div class="my-selector-b" id="select-township"></div>
+                  <!-- <input type="text" class="form-control" id="township" placeholder="鄉鎮區" maxlength="50" /> -->
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">鄰里</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="village" placeholder="鄰里" maxlength="50" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">街道</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="street" placeholder="街道" maxlength="50" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">名稱</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="name" placeholder="名稱" maxlength="50" />
                 </div>
               </div>
               <div class="form-group">
@@ -159,12 +205,6 @@
                     <option value="1">啟用</option>
                     <option value="0">停用</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="description" class="col-sm-2 control-label">敘述</label>
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" id="description" placeholder="Description" maxlength="500"/>
                 </div>
               </div>
             </div>
@@ -178,5 +218,6 @@
     </script>
    <%@include file="/admin/pages/include/initial_script.jsp" %> 
    <script src="<%=request.getContextPath() %>/admin/plugins/jquery-validate/jquery.validate.min.js"></script>
-   <script src="<%=request.getContextPath() %>/admin/js/location/item.js?updated=eAs"></script>
+   <script src="<%=request.getContextPath() %>/admin/plugins/tw-city/tw-city-selector.js"></script>
+   <script src="<%=request.getContextPath() %>/admin/js/designatepath/item.js?updated=seB"></script>
 </html>

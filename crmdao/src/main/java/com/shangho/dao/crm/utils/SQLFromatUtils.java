@@ -7,7 +7,7 @@ public class SQLFromatUtils {
 		if (i == 0) {
 			description += " WHERE " + sqlWhereDescription;
 		} else {
-			description += " OR " + sqlWhereDescription;
+			description += " AND " + sqlWhereDescription;
 		}
 		return description;
 	}

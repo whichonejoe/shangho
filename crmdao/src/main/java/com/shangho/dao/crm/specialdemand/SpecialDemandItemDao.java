@@ -192,9 +192,9 @@ public class SpecialDemandItemDao {
 	}
 
 	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.description,A.id,"
-			+ "CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_item C "
+			+ "A.special_demand_category_id,A.refer_id,CASE WHEN A.refer_id>0 THEN (SELECT C.name FROM special_demand_item C "
 			+ "WHERE A.refer_id = C.id LIMIT 1)ELSE NULL END AS refer_name FROM special_demand_item A "
-			+ "LEFT JOIN SpecialDemand_range_category B ON A.special_demand_category_id = B.id ";
+			+ "LEFT JOIN special_demand_category B ON A.special_demand_category_id = B.id ";
 
 	public List<ListSpecialDemandItemResponse> list(final Connection conn, final List<Integer> categories,
 			final List<Integer> refers, final String status, final List<String> names) throws SQLException {
@@ -224,9 +224,9 @@ public class SpecialDemandItemDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListSpecialDemandItemResponse(rs.getInt("id"), rs.getString("category_name"),
-						rs.getString("refer_name"), rs.getString("status"), rs.getString("name"),
-						rs.getString("description")));
+				list.add(new ListSpecialDemandItemResponse(rs.getInt("id"), rs.getInt("special_demand_category_id"),
+						rs.getString("category_name"), rs.getInt("refer_id"), rs.getString("refer_name"),
+						rs.getString("status"), rs.getString("name"), rs.getString("description")));
 			}
 
 		} finally {

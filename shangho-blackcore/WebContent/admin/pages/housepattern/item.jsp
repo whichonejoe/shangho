@@ -17,7 +17,7 @@
          <div class="content-wrapper">
             <section class="content-header">
                <h1>
-                  接受商圈 - 項目管理
+                  格局 - 項目管理
                </h1>
             </section>
             <!-- Main content -->
@@ -85,8 +85,7 @@
         <thead>
           <tr>
             <th>名稱</th>
-            <th>分類</th>
-            <th>敘述</th>
+            <th>分類</th>            
             <th></th>
           </tr>
         </thead>
@@ -101,11 +100,7 @@
                   <div id="category_name_{{id}}">{{categoryname}}</div>
                   <input type="hidden" id="category_id_{{id}}" value="{{categoryid}}" />
                   <div id="category_name_modify_{{id}}"></div>
-              </td>
-              <td>
-                  <div id="description_{{id}}">{{description}}</div>
-                  <div id="description_modify_{{id}}"></div>
-              </td>
+              </td>             
               <td>
                 <a href="javascript:void(0)" class="turnoff" id="turnoff_{{id}}" value="{{id}}" title="停用" {{#ifCond status 0}}style="display:none"{{/ifCond}}>
                   <i class="fa fa-fw fa-pause"></i>
@@ -123,6 +118,7 @@
                   <i class="fa fa-fw fa-check"></i>
                 </a>
                 <input type="hidden" id="status_{{id}}" value="{{status}}"/>
+                <input type="hidden" id="sort_{{id}}" value="{{sort}}"/>
               </td>
             </tr> 
           {{/each}}
@@ -161,12 +157,7 @@
                   </select>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="description" class="col-sm-2 control-label">敘述</label>
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" id="description" placeholder="Description" maxlength="500"/>
-                </div>
-              </div>
+              
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
@@ -178,5 +169,5 @@
     </script>
    <%@include file="/admin/pages/include/initial_script.jsp" %> 
    <script src="<%=request.getContextPath() %>/admin/plugins/jquery-validate/jquery.validate.min.js"></script>
-   <script src="<%=request.getContextPath() %>/admin/js/location/item.js?updated=eAs"></script>
+   <script src="<%=request.getContextPath() %>/admin/js/housepattern/item.js?updated=koss"></script>
 </html>

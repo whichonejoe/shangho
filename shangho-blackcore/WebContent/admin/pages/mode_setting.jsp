@@ -151,7 +151,7 @@
   </div> 
 </script>
 <script type="text/template" id="tpl_mode_add">
-  <label class="col-sm-2 control-label">Mode Name</label>
+  <label class="col-sm-2 control-label">Mode 名稱</label>
   <div class="col-sm-3">
     <input type="text" class="form-control" id="mode_name" placeholder="Mode Name" required/>
   </div>

@@ -17,7 +17,7 @@
          <div class="content-wrapper">
             <section class="content-header">
                <h1>
-                  指名區域 - 分類管理
+                  接受商圈 - 分類管理
                </h1>
             </section>
             <!-- Main content -->
@@ -39,7 +39,8 @@
           <div class="box">
             <div class="box-header">
               <!-- <h3 class="box-title"></h3> -->         
-              <a class="btn btn-success" href="#add"><i class="fa fa-plus"></i></a>
+              <a class="btn btn-success" href="#add"><i class="fa fa-plus"></i></a>&nbsp;
+              <a class="btn btn-success search" href="javascript:void(0);"><i class="fa fa-search"></i></a>
               <div class="box-tools">
                 
                 <div class="input-group input-group-sm" style="width: 150px;">              
@@ -58,6 +59,21 @@
    </script>
    <!-- 首頁list -->
    <script type="text/template" id="tpl_mode_list">
+      <div class="box box-info" id="search_table" style="display:none;">
+         <div class="box-header with-border">
+            <h3 class="box-title">搜尋</h3>
+         </div>         
+         <div class="box-body">
+            <form class="form-horizontal" id="myform">
+              <div class="form-group">
+                 <label for="inputEmail3" class="col-sm-2 control-label">名稱</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="0" id="name_search" placeholder="名稱" maxlength="50" />
+                 </div>
+              </div>
+            </form>
+         </div>
+      </div>
       <table id="data-table" class="table table-bordered table-hover">
         <thead>
           <tr>
@@ -111,7 +127,7 @@
          <form class="form-horizontal" id="myform">
             <div class="box-body">
               <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
+                <label for="name" class="col-sm-2 control-label">名稱</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" id="name" placeholder="Name" maxlength="50" required/>
                 </div>
@@ -126,7 +142,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="description" class="col-sm-2 control-label">Description</label>
+                <label for="description" class="col-sm-2 control-label">敘述</label>
                 <div class="col-sm-7">
                   <input type="text" class="form-control" id="description" placeholder="Description" maxlength="500"/>
                 </div>

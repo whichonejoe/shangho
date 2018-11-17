@@ -31,12 +31,22 @@ function showDataList(){
 	$('#data-table').DataTable({
 		"paging": true,
 		"lengthChange": false,
-		"searching": false,
 		"ordering": false,
 		"info": false,
 		"autoWidth": true,
 		"displayLength": 10
     });
+
+    $('input.column_filter').on( 'keyup click', function () {
+        filterColumn( $(this).attr('count'),$(this).val());
+    });
+
+    $('#data-table_filter').attr('style','display:none;')
+}
+function filterColumn ( i,_value ) {
+    $('#data-table').DataTable().column( i ).search(
+        _value
+    ).draw();
 }
 function setBindMain(){
 	// $("#main-content").unbind("click.add");
@@ -130,6 +140,17 @@ function setBindMain(){
 				}
     		}
     		doDeleteSubmit(OBJ);
+    	}
+    });
+    
+    //查詢表單
+    $("#main-content").unbind("click.search");
+    $("#main-content").on("click.search", ".search", function(event){ 
+    	var obj = $('#search_table');
+    	if(obj.attr('style')=='display:none;'){
+    		obj.attr('style','display');
+    	}else{
+    		obj.attr('style','display:none;');
     	}
     });
 }
@@ -351,7 +372,7 @@ function handleUpdateSuccess(_ID,_status){
 	var description = $('input[name=input_description_' + _ID +']').val();
 	var name = $('input[name=input_name_' + _ID +']').val();
 	$('#description_' + _ID).text(description);
-	$('#name_' + _ID).text(description);
+	$('#name_' + _ID).text(name);
 	$('#name_' + _ID).attr('style','display');
     $('#name_modify_' + _ID).html('');
     $('#description_' + _ID).attr('style','display');

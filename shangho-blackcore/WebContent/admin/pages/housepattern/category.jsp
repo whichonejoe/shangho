@@ -17,7 +17,7 @@
          <div class="content-wrapper">
             <section class="content-header">
                <h1>
-                  接受商圈 - 項目管理
+                  格局 - 分類管理
                </h1>
             </section>
             <!-- Main content -->
@@ -41,18 +41,17 @@
               <!-- <h3 class="box-title"></h3> -->         
               <a class="btn btn-success" href="#add"><i class="fa fa-plus"></i></a>&nbsp;
               <a class="btn btn-success search" href="javascript:void(0);"><i class="fa fa-search"></i></a>
-              
               <div class="box-tools">
                 
                 <div class="input-group input-group-sm" style="width: 150px;">              
                 </div>
               </div>
             </div>
-           
+            <!-- /.box-header -->
             <div class="box-body" id="table_list">
               
             </div>
-            
+            <!-- /.box-body -->
           </div>
           <!-- /.box -->
         </div>
@@ -66,27 +65,19 @@
          </div>         
          <div class="box-body">
             <form class="form-horizontal" id="myform">
-            <div class="form-group">
-               <label for="inputEmail3" class="col-sm-2 control-label">名稱</label>
-               <div class="col-sm-5">
-                  <input type="text" class="form-control column_filter" count="0" id="name_search" placeholder="名稱" maxlength="50" />
-               </div>
-            </div>
-            <div class="form-group">
-               <label for="inputPassword3" class="col-sm-2 control-label">分類</label>
-               <div class="col-sm-5">
-                  <input type="text" class="form-control column_filter" count="1" id="category_search" placeholder="分類" maxlength="50" />
-               </div>
-            </div>
+              <div class="form-group">
+                 <label for="inputEmail3" class="col-sm-2 control-label">名稱</label>
+                 <div class="col-sm-5">
+                    <input type="text" class="form-control column_filter" count="0" id="name_search" placeholder="名稱" maxlength="50" />
+                 </div>
+              </div>
             </form>
          </div>
       </div>
       <table id="data-table" class="table table-bordered table-hover">
         <thead>
           <tr>
-            <th>名稱</th>
-            <th>分類</th>
-            <th>敘述</th>
+            <th>名稱</th>           
             <th></th>
           </tr>
         </thead>
@@ -96,16 +87,7 @@
               <td>
                   <div id="name_{{id}}">{{name}}</div>
                   <div id="name_modify_{{id}}"></div>
-              </td>
-              <td>
-                  <div id="category_name_{{id}}">{{categoryname}}</div>
-                  <input type="hidden" id="category_id_{{id}}" value="{{categoryid}}" />
-                  <div id="category_name_modify_{{id}}"></div>
-              </td>
-              <td>
-                  <div id="description_{{id}}">{{description}}</div>
-                  <div id="description_modify_{{id}}"></div>
-              </td>
+              </td>              
               <td>
                 <a href="javascript:void(0)" class="turnoff" id="turnoff_{{id}}" value="{{id}}" title="停用" {{#ifCond status 0}}style="display:none"{{/ifCond}}>
                   <i class="fa fa-fw fa-pause"></i>
@@ -123,6 +105,7 @@
                   <i class="fa fa-fw fa-check"></i>
                 </a>
                 <input type="hidden" id="status_{{id}}" value="{{status}}"/>
+                <input type="hidden" id="sort_{{id}}" value="{{sort}}"/>
               </td>
             </tr> 
           {{/each}}
@@ -130,26 +113,19 @@
       </table>
    </script>
    <script type="text/template" id="tpl_page_add">
+      
       <div class="box box-info">
          <div class="box-header with-border">
             <h3 class="box-title">新增</h3>
          </div>
+         <!-- /.box-header -->
+         <!-- form start -->
          <form class="form-horizontal" id="myform">
             <div class="box-body">
               <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">名稱</label>
                 <div class="col-sm-5">
                   <input type="text" class="form-control" id="name" placeholder="Name" maxlength="50" required/>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">分類</label>
-                <div class="col-sm-5">
-                  <select class="form-control" id="category_id">
-                    {{#each arr}}
-                      <option value="{{id}}">{{name}}</option>
-                    {{/each}}
-                  </select>
                 </div>
               </div>
               <div class="form-group">
@@ -160,13 +136,7 @@
                     <option value="0">停用</option>
                   </select>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="description" class="col-sm-2 control-label">敘述</label>
-                <div class="col-sm-7">
-                  <input type="text" class="form-control" id="description" placeholder="Description" maxlength="500"/>
-                </div>
-              </div>
+              </div>             
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
@@ -178,5 +148,5 @@
     </script>
    <%@include file="/admin/pages/include/initial_script.jsp" %> 
    <script src="<%=request.getContextPath() %>/admin/plugins/jquery-validate/jquery.validate.min.js"></script>
-   <script src="<%=request.getContextPath() %>/admin/js/location/item.js?updated=eAs"></script>
+   <script src="<%=request.getContextPath() %>/admin/js/housepattern/category.js?updated=A"></script>
 </html>

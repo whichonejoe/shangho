@@ -139,8 +139,8 @@ public class HousePatternItemDao {
 		return isExist;
 	}
 
-	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.sor,A.id "
-			+ "FROM house_pattern_item A LEFT JOIN house_pattern_category B ON A.house_pattern_id = B.id ";
+	private final static String SELECT = "SELECT B.name AS category_name,A.status,A.name,A.sort,A.id "
+			+ ",A.house_pattern_id FROM house_pattern_item A LEFT JOIN house_pattern_category B ON A.house_pattern_id = B.id ";
 
 	public List<ListHousePatternItemResponse> list(final Connection conn, final List<Integer> categories,
 			final String status, final List<String> names) throws SQLException {
@@ -167,8 +167,9 @@ public class HousePatternItemDao {
 			final ResultSet rs = psmt.executeQuery();
 
 			while (rs.next()) {
-				list.add(new ListHousePatternItemResponse(rs.getInt("id"), rs.getString("category_name"),
-						rs.getString("status"), rs.getString("name"), rs.getInt("sort")));
+				list.add(new ListHousePatternItemResponse(rs.getInt("id"), rs.getInt("house_pattern_id"),
+						rs.getString("category_name"), rs.getString("status"), rs.getString("name"),
+						rs.getInt("sort")));
 			}
 
 		} finally {

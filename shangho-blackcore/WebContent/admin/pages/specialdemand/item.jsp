@@ -17,7 +17,7 @@
          <div class="content-wrapper">
             <section class="content-header">
                <h1>
-                  接受商圈 - 項目管理
+                  特別需求 - 項目管理
                </h1>
             </section>
             <!-- Main content -->
@@ -178,5 +178,5 @@
     </script>
    <%@include file="/admin/pages/include/initial_script.jsp" %> 
    <script src="<%=request.getContextPath() %>/admin/plugins/jquery-validate/jquery.validate.min.js"></script>
-   <script src="<%=request.getContextPath() %>/admin/js/location/item.js?updated=eAs"></script>
+   <script src="<%=request.getContextPath() %>/admin/js/specialdemand/item.js?updated=okoko"></script>
 </html>

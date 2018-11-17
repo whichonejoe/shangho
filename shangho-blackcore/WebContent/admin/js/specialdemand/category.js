@@ -213,7 +213,7 @@ function doListSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/list',
+		url: $.serverurl + '/specialdemand/category/list',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -237,7 +237,7 @@ function doUpdateSubmit(_data,_ID){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/specialdemand/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -260,7 +260,7 @@ function doDeleteSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/delete',
+		url: $.serverurl + '/specialdemand/category/delete',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -283,7 +283,7 @@ function doStatusSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/specialdemand/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -305,7 +305,7 @@ function doInsertSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/insert',
+		url: $.serverurl + '/specialdemand/category/insert',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){

@@ -49,20 +49,6 @@ function filterColumn ( i,_value ) {
     ).draw();
 }
 function setBindMain(){
-	// $("#main-content").unbind("click.add");
- //    $("#main-content").on("click.add", "#add", function(event){ 
- //    	var id = $(this).attr('value');
- //    	var OBJ = {
-	// 		content : {
-	// 			token : 'token',
-	// 			id : id,
-	// 			name : $('#name_' + id).text(),
-	// 			status :'0',
-	// 			description : $('#description_' + id).text()
-	// 		}
-	// 	}
-	// 	doStatusSubmit(OBJ,id);
- //    });
 	$("#table_list").unbind("click.turnoff");
     $("#table_list").on("click.turnoff", ".turnoff", function(event){ 
     	var id = $(this).attr('value');
@@ -72,6 +58,8 @@ function setBindMain(){
 				id : id,
 				name : $('#name_' + id).text(),
 				status :'0',
+				sort : $('#sort_' + id).val(),
+				type : $('#hidden_type_' + id).val(),
 				description : $('#description_' + id).text()
 			}
 		}
@@ -87,6 +75,8 @@ function setBindMain(){
 				id : id,
 				name : $('#name_' + id).text(),
 				status :'1',
+				sort : $('#sort_' + id).val(),
+				type : $('#hidden_type_' + id).val(),
 				description : $('#description_' + id).text()
 			}
 		}
@@ -100,16 +90,20 @@ function setBindMain(){
     	var id = $(this).attr('value');
     	var name = $('#name_' + id).text();
     	var description = $('#description_' + id).text();
+    	var type = $('#hidden_type_' + id).val();
+
     	$('#name_' + id).attr('style','display:none');
         $('#name_modify_' + id).html('<input name="input_name_'+ id +'" value="'+ name +'"/>');
         $('#description_' + id).attr('style','display:none');
         $('#description_modify_' + id).html('<input name="input_description_'+ id +'" value="'+ description +'"/>');
+        $('#type_modify_' + id).html(handleListTypeOptionHTML(id,type));
 
         $('#edit_' + id).attr('style','display:none');
         $('#check_' + id).attr('style','display');
         $('#delete_' + id).attr('style','display:none');
         $('#turnoff_' + id).attr('style','display:none');
         $('#turnon_' + id).attr('style','display:none');
+        $('#type_' + id).attr('style','display:none');
     });
 
     //修改
@@ -122,6 +116,7 @@ function setBindMain(){
 				id : id,
 				name : $('input[name=input_name_'+ id +']').val(),
 				status : $('#status_'+ id).val(),
+				type :$('#type_select_'+ id).val(),
 				description : $('input[name=input_description_'+ id +']').val()
 			}
 		}
@@ -164,6 +159,7 @@ function setBindAdd(){
 					token : 'token',
 					name : $('#name').val(),
 					status :$('#status').val(),
+					type :$('#type').val(),
 					description : $('#description').val()
 				}
 			}
@@ -213,7 +209,7 @@ function doListSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/list',
+		url: $.serverurl + '/object/category/list',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -237,7 +233,7 @@ function doUpdateSubmit(_data,_ID){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/object/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -260,7 +256,7 @@ function doDeleteSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/delete',
+		url: $.serverurl + '/object/category/delete',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -283,7 +279,7 @@ function doStatusSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/update',
+		url: $.serverurl + '/object/category/update',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -305,7 +301,7 @@ function doInsertSubmit(_data){
 	$.ajax({
 		type: "POST",
 		async: false,
-		url: $.serverurl + '/location/category/insert',
+		url: $.serverurl + '/object/category/insert',
 		data: JSON.stringify(_data),
 		success: function(obj){			
 			if(obj.status==0){
@@ -371,6 +367,9 @@ function handleRefreshToken(callback){
 function handleUpdateSuccess(_ID,_status){
 	var description = $('input[name=input_description_' + _ID +']').val();
 	var name = $('input[name=input_name_' + _ID +']').val();
+	var typename = $('#type_select_' + _ID +' option:selected').text();
+	var typeid = $('#type_select_' + _ID +'').val();
+
 	$('#description_' + _ID).text(description);
 	$('#name_' + _ID).text(name);
 	$('#name_' + _ID).attr('style','display');
@@ -381,6 +380,12 @@ function handleUpdateSuccess(_ID,_status){
     $('#edit_' + _ID).attr('style','display');
     $('#check_' + _ID).attr('style','display:none');
     $('#delete_' + _ID).attr('style','display');
+
+    $('#type_' + _ID).text(typename);
+    $('#type_' + _ID).attr('style','display');
+    $('#type_modify_' + _ID).html('');
+    $('#hidden_type_' + _ID).val(typeid);
+
     handleUpdateStatusSuccess(_ID,_status);
 }
 function handleUpdateStatusSuccess(_ID,_status){
@@ -395,4 +400,15 @@ function handleUpdateStatusSuccess(_ID,_status){
 }
 function handleDeleteSuccess(_ID){
 	$('#delete_'+_ID).parent('td').parent('tr').empty()
+}
+function handleListTypeOptionHTML(_ID,_type){
+	var html = '<select class="form-control" id="type_select_' + _ID +'">';
+	if(_type=='small'){
+		html += '<option value="small" selected="true">一般住宅/建地</option>' +
+			'<option value="big">大型建地/農地</option>';
+	}else{
+		html += '<option value="small">一般住宅/建地</option>' +
+			'<option value="big" selected="true">大型建地/農地</option>';
+	}
+	return html + '</select>';
 }
